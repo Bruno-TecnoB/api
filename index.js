@@ -3,6 +3,8 @@ const app = express();
 const port = 3000;
 const path = require("path")
 
+//api
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 

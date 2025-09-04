@@ -2,7 +2,7 @@ const amqp = require("amqplib");
 const fs = require("fs");
 
 async function startConsumer() {
-  const connection = await amqp.connect("amqp:https://tecnobil.dev");
+  const connection = await amqp.connect("amqp:13.59.97.160");
   const channel = await connection.createChannel();
   const queue = "cadastros";
 

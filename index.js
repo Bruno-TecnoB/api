@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 let channel;
 async function connectRabbitMQ() {
   try {
-    const connection = await amqp.connect("amqp:https://tecnobil.dev"); // ou IP da VPS
+    const connection = await amqp.connect("amqp://13.59.97.160"); // ou IP da VPS
     channel = await connection.createChannel();
     await channel.assertQueue("cadastros", { durable: true });
     console.log("✅ Conectado ao RabbitMQ");
@@ -27,7 +27,6 @@ app.get("/api", (req, res) => {
 
 app.post("/api/usuarios", (req, res) => {
     const novoUsuario = req.body;
-
 
     // Enviar para RabbitMQ
     if (channel) {

@@ -13,12 +13,21 @@ app.use(express.urlencoded({ extended: true }));
 let channel;
 async function connectRabbitMQ() {
   try {
-    const connection = await amqp.connect("amqp://tecnobil.dev/api"); // ou IP da VPS
+    console.log("🔄 Tentando conectar ao RabbitMQ...");
+    const connection = await amqp.connect({
+      protocol: 'amqp',
+      hostname: 'localhost',
+      port: 5672,
+      username: 'guest',
+      password: 'guest',
+    });
+
     channel = await connection.createChannel();
     await channel.assertQueue("cadastros", { durable: true });
-    console.log("✅ Conectado ao RabbitMQ");
+
+    console.log("✅ Conectado ao RabbitMQ e fila criada!");
   } catch (err) {
-    console.error("❌ Erro ao conectar no RabbitMQ", err);
+    console.error("❌ Erro ao conectar no RabbitMQ:", err);
   }
 }
 

@@ -1,17 +1,41 @@
 const express = require("express");
+const path = require("path");
+const amqp = require('amqplib');
+
 const app = express();
 const port = 3000;
-const path = require("path")
 
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Conexão global com RabbitMQ
+let channel;
+async function connectRabbitMQ() {
+  try {
+    const connection = await amqp.connect("amqp:https://tecnobil.dev"); // ou IP da VPS
+    channel = await connection.createChannel();
+    await channel.assertQueue("cadastros", { durable: true });
+    console.log("✅ Conectado ao RabbitMQ");
+  } catch (err) {
+    console.error("❌ Erro ao conectar no RabbitMQ", err);
+  }
+}
 
 app.get("/api", (req, res) => {
     res.sendFile(path.join(__dirname, "form.html"))});
 
 app.post("/api/usuarios", (req, res) => {
     const novoUsuario = req.body;
+
+
+    // Enviar para RabbitMQ
+    if (channel) {
+    const msg = JSON.stringify(novoUsuario);
+    channel.sendToQueue("cadastros", Buffer.from(msg), { persistent: true });
+    console.log("📤 Usuário enviado para RabbitMQ:", msg);
+  }
+
     res.status(201).json({
         mensagem:"Usuário criado com sucesso!",
         usuario: novoUsuario,
@@ -19,5 +43,6 @@ app.post("/api/usuarios", (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log("Rodando na porta 3000")
+    console.log("Rodando")
+    connectRabbitMQ(); // conecta no RabbitMQ ao iniciar
 })

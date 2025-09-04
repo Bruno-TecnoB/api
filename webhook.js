@@ -12,7 +12,7 @@ http.createServer((req, res) => {
         // Só executa se o push for na branch producao
         if (payload.ref === "refs/heads/producao") {
           console.log("🚀 Deploy iniciado...");
-          exec("sh /var/www/tecnobil.dev/deploy.sh", (err, stdout, stderr) => {
+          exec("sh ./deploy.sh", { cwd: "/var/www/tecnobil.dev" }, (err, stdout, stderr) => {
             if (err) console.error("Erro:", err);
             console.log(stdout);
             console.error(stderr);

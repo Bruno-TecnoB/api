@@ -1,0 +1,6 @@
+{"nome":"Bruno","email":"bruno@gmail.com"}
+{"nome":"Bruno","email":"bruno@gmail.com"}
+{"nome":"Joao","email":"joao@gmail.com"}
+{"nome":"Cristiano Ronaldo","email":"cr7@gmail.com"}
+{"nome":"Luiz Inácio","email":"molusco@gmail.com"}
+{"nome":"Papa","email":"Pope@gmail.com"}

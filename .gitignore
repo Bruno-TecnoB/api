@@ -1,2 +1,8 @@
+#geral
 node_modules/
-dist
+
+#nest-api
+nest-api/*
+!nest-api/dist/
+!nest-api/package.json
+!nest-api/package-lock.json

@@ -9,8 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "20": "^3.1.9",
     "amqplib": "^0.10.9",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "node": "^20.19.5",
+    "nvm": "^0.0.4"
   },
   "description": ""
 }

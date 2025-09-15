@@ -57,9 +57,16 @@ app.get("/api/usuarios", (req, res) => {
       .split("\n")
       .filter((line) => line.trim() !== "")
       .map((line) => JSON.parse(line));
-    res.json(usuarios);
+
+    let html = "<h1>Usuários cadastrados</h1><ul>";
+    usuarios.forEach((u) => {
+      html += `<li>Nome: ${u.nome}, E-mail: ${u.email}</li>`;
+    });
+    html += "</ul><a href='/api'>Voltar</a>";
+
+    res.send(html);
   } catch (err) {
-    res.status(500).json({ erro: "Erro ao ler usuários." });
+    res.status(500).send("Erro ao ler usuários.");
   }
 });
 

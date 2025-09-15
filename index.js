@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+const fs = require("fs");
 const amqp = require("amqplib");
 
 const app = express();
@@ -8,11 +9,9 @@ const port = 3000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Conexão global com RabbitMQ
 let channel;
 async function connectRabbitMQ() {
   try {
-    console.log("🔄 Tentando conectar ao RabbitMQ...");
     const connection = await amqp.connect({
       protocol: "amqp",
       hostname: "localhost",
@@ -23,10 +22,8 @@ async function connectRabbitMQ() {
 
     channel = await connection.createChannel();
     await channel.assertQueue("cadastros", { durable: true });
-
-    console.log("✅ Conectado ao RabbitMQ e fila criada!");
   } catch (err) {
-    console.error("❌ Erro ao conectar no RabbitMQ:", err);
+    console.error("Erro ao conectar no RabbitMQ:", err);
   }
 }
 
@@ -41,8 +38,37 @@ app.post("/api/usuarios", (req, res) => {
   if (channel) {
     const msg = JSON.stringify(novoUsuario);
     channel.sendToQueue("cadastros", Buffer.from(msg), { persistent: true });
-    console.log("📤 Usuário enviado para RabbitMQ:", msg);
   }
+
+  // Salvar no cadastros.html
+  const arquivo = path.join(__dirname, "cadastros.html");
+  let html = "";
+
+  // Se o arquivo existir, lê o conteúdo atual, exceto o </ul></body></html>
+  if (fs.existsSync(arquivo)) {
+    html = fs.readFileSync(arquivo, "utf-8");
+    html = html.replace("</ul></body></html>", ""); // remove fechamento para adicionar novo item
+  } else {
+    html = `
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Usuários Cadastrados</title>
+        </head>
+        <body>
+        <h1>Usuários Cadastrados</h1>
+        <ul>
+        `;
+  }
+
+  // Adiciona novo usuário
+  html += `<li>Nome: ${novoUsuario.nome}, E-mail: ${novoUsuario.email}</li>\n`;
+
+  // Fecha a lista e o HTML
+  html += "</ul></body></html>";
+
+  // Salva o arquivo
+  fs.writeFileSync(arquivo, html, "utf-8");
 
   res.status(201).json({
     mensagem: "Usuário criado com sucesso!",
@@ -50,27 +76,17 @@ app.post("/api/usuarios", (req, res) => {
   });
 });
 
+// Endpoint para exibir cadastros.html
 app.get("/api/usuarios", (req, res) => {
-  try {
-    const data = fs.readFileSync("cadastros.txt", "utf-8");
-    const usuarios = data
-      .split("\n")
-      .filter((line) => line.trim() !== "")
-      .map((line) => JSON.parse(line));
-
-    let html = "<h1>Usuários cadastrados</h1><ul>";
-    usuarios.forEach((u) => {
-      html += `<li>Nome: ${u.nome}, E-mail: ${u.email}</li>`;
-    });
-    html += "</ul><a href='/api'>Voltar</a>";
-
-    res.send(html);
-  } catch (err) {
-    res.status(500).send("Erro ao ler usuários.");
+  const arquivo = path.join(__dirname, "cadastros.html");
+  if (fs.existsSync(arquivo)) {
+    res.sendFile(arquivo);
+  } else {
+    res.send("<h1>Nenhum usuário cadastrado</h1><a href='/api'>Voltar</a>");
   }
 });
 
 app.listen(port, () => {
-  console.log("Rodando");
-  connectRabbitMQ(); // conecta no RabbitMQ ao iniciar
+  console.log("Rodando na porta", port);
+  connectRabbitMQ();
 });

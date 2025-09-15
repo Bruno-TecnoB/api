@@ -25,5 +25,35 @@
     <a href="/api/usuarios">
       <button type="button">Ver Usuários</button>
     </a>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const form = document.querySelector("form");
+
+        form.addEventListener("submit", async (event) => {
+          event.preventDefault(); // evita o reload da página
+
+          const nome = document.getElementById("nome").value;
+          const email = document.getElementById("email").value;
+
+          const response = await fetch("/api/usuarios", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ nome, email }),
+          });
+
+          const data = await response.json();
+          console.log("Usuário criado:", data);
+
+          // opcional: mostrar uma mensagem para o usuário
+          alert(`Usuário ${data.usuario.nome} cadastrado com sucesso!`);
+
+          // limpar o formulário
+          form.reset();
+        });
+      });
+    </script>
   </body>
 </html>

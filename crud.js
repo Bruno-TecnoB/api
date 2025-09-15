@@ -39,7 +39,7 @@ app.get("/crud/items/:id", (req, res) => {
 });
 
 // UPDATE
-app.put("/api/items/:id", (req, res) => {
+app.put("/crud/items/:id", (req, res) => {
   const item = items.find((i) => i.id === parseInt(req.params.id));
   if (!item) return res.status(404).json({ error: "Item not found" });
   const { name } = req.body;
@@ -49,7 +49,7 @@ app.put("/api/items/:id", (req, res) => {
 });
 
 // DELETE
-app.delete("/api/items/:id", (req, res) => {
+app.delete("/crud/items/:id", (req, res) => {
   const index = items.findIndex((i) => i.id === parseInt(req.params.id));
   if (index === -1) return res.status(404).json({ error: "Item not found" });
   items.splice(index, 1);

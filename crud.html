@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Simples</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        input, button { margin: 5px; }
+        table { border-collapse: collapse; width: 400px; margin-top: 20px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        th { background: #eee; }
+    </style>
+</head>
+<body>
+    <h1>Gerenciador de Itens</h1>
+    <form id="addForm">
+        <input type="text" id="itemName" placeholder="Nome do item" required>
+        <button type="submit">Adicionar</button>
+    </form>
+    <table id="itemsTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        const apiUrl = '/api/items';
+
+        function fetchItems() {
+            fetch(apiUrl)
+                .then(res => res.json())
+                .then(items => {
+                    const tbody = document.querySelector('#itemsTable tbody');
+                    tbody.innerHTML = '';
+                    items.forEach(item => {
+                        const tr = document.createElement('tr');
+                        tr.innerHTML = `
+                            <td>${item.id}</td>
+                            <td>
+                                <span class="item-name">${item.name}</span>
+                                <input type="text" class="edit-input" style="display:none;" value="${item.name}">
+                            </td>
+                            <td>
+                                <button onclick="editItem(${item.id}, this)">Editar</button>
+                                <button onclick="deleteItem(${item.id})">Excluir</button>
+                                <button onclick="saveEdit(${item.id}, this)" style="display:none;">Salvar</button>
+                                <button onclick="cancelEdit(this)" style="display:none;">Cancelar</button>
+                            </td>
+                        `;
+                        tbody.appendChild(tr);
+                    });
+                });
+        }
+
+        document.getElementById('addForm').onsubmit = function(e) {
+            e.preventDefault();
+            const name = document.getElementById('itemName').value.trim();
+            if (!name) return;
+            fetch(apiUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name })
+            })
+            .then(() => {
+                document.getElementById('itemName').value = '';
+                fetchItems();
+            });
+        };
+
+        window.editItem = function(id, btn) {
+            const td = btn.parentElement.parentElement.children[1];
+            td.querySelector('.item-name').style.display = 'none';
+            td.querySelector('.edit-input').style.display = '';
+            btn.style.display = 'none';
+            btn.nextElementSibling.style.display = 'none';
+            btn.nextElementSibling.nextElementSibling.style.display = '';
+            btn.nextElementSibling.nextElementSibling.nextElementSibling.style.display = '';
+        };
+
+        window.saveEdit = function(id, btn) {
+            const td = btn.parentElement.parentElement.children[1];
+            const input = td.querySelector('.edit-input');
+            const name = input.value.trim();
+            if (!name) return;
+            fetch(`${apiUrl}/${id}`, {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name })
+            })
+            .then(() => fetchItems());
+        };
+
+        window.cancelEdit = function(btn) {
+            fetchItems();
+        };
+
+        window.deleteItem = function(id) {
+            if (!confirm('Deseja realmente excluir este item?')) return;
+            fetch(`${apiUrl}/${id}`, { method: 'DELETE' })
+                .then(() => fetchItems());
+        };
+
+        fetchItems();
+    </script>
+</body>
+</html>

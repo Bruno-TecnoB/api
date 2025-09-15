@@ -21,25 +21,9 @@
     </form>
 
     <hr />
-    <h2>Usuários cadastrados:</h2>
-    <button id="verUsuariosBtn">Ver Usuários</button>
-    <ul id="listaUsuarios"></ul>
-
-    <script>
-      document
-        .getElementById("verUsuariosBtn")
-        .addEventListener("click", async () => {
-          const res = await fetch("/api/usuarios");
-          const usuarios = await res.json();
-
-          const lista = document.getElementById("listaUsuarios");
-          lista.innerHTML = ""; // limpa antes de mostrar
-          usuarios.forEach((u) => {
-            const li = document.createElement("li");
-            li.textContent = `Nome: ${u.nome}, E-mail: ${u.email}`;
-            lista.appendChild(li);
-          });
-        });
-    </script>
+    <!-- Botão que leva para /api/usuarios -->
+    <a href="/api/usuarios">
+      <button type="button">Ver Usuários</button>
+    </a>
   </body>
 </html>

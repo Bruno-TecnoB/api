@@ -1,10 +1,9 @@
 const express = require("express");
 const path = require("path");
-const amqp = require('amqplib');
+const amqp = require("amqplib");
 
 const app = express();
 const port = 3000;
-
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -15,11 +14,11 @@ async function connectRabbitMQ() {
   try {
     console.log("🔄 Tentando conectar ao RabbitMQ...");
     const connection = await amqp.connect({
-      protocol: 'amqp',
-      hostname: 'localhost',
+      protocol: "amqp",
+      hostname: "localhost",
       port: 5672,
-      username: 'guest',
-      password: 'guest',
+      username: "guest",
+      password: "guest",
     });
 
     channel = await connection.createChannel();
@@ -32,25 +31,39 @@ async function connectRabbitMQ() {
 }
 
 app.get("/api", (req, res) => {
-    res.sendFile(path.join(__dirname, "form.html"))});
+  res.sendFile(path.join(__dirname, "form.html"));
+});
 
 app.post("/api/usuarios", (req, res) => {
-    const novoUsuario = req.body;
+  const novoUsuario = req.body;
 
-    // Enviar para RabbitMQ
-    if (channel) {
+  // Enviar para RabbitMQ
+  if (channel) {
     const msg = JSON.stringify(novoUsuario);
     channel.sendToQueue("cadastros", Buffer.from(msg), { persistent: true });
     console.log("📤 Usuário enviado para RabbitMQ:", msg);
   }
 
-    res.status(201).json({
-        mensagem:"Usuário criado com sucesso!",
-        usuario: novoUsuario,
-    })
-})
+  res.status(201).json({
+    mensagem: "Usuário criado com sucesso!",
+    usuario: novoUsuario,
+  });
+});
+
+app.get("/api/usuarios", (req, res) => {
+  try {
+    const data = fs.readFileSync("cadastros.txt", "utf-8");
+    const usuarios = data
+      .split("\n")
+      .filter((line) => line.trim() !== "")
+      .map((line) => JSON.parse(line));
+    res.json(usuarios);
+  } catch (err) {
+    res.status(500).json({ erro: "Erro ao ler usuários." });
+  }
+});
 
 app.listen(port, () => {
-    console.log("Rodando")
-    connectRabbitMQ(); // conecta no RabbitMQ ao iniciar
-})
+  console.log("Rodando");
+  connectRabbitMQ(); // conecta no RabbitMQ ao iniciar
+});

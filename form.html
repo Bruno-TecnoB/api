@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Criar Novo Usuário</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Criar Novo Usuário</h1>
-    
+
     <form action="/api/usuarios" method="post">
-        <label for="nome">Nome:</label>
-        <br>
-        <input type="text" id="nome" name="nome" required>
-        <br>
-        <label for="email">E-mail:</label>
-        <br>
-        <input type="email" id="email" name="email" required>
-        <br><br>
-        <button type="submit">Cadastrar</button>
+      <label for="nome">Nome:</label>
+      <br />
+      <input type="text" id="nome" name="nome" required />
+      <br />
+      <label for="email">E-mail:</label>
+      <br />
+      <input type="email" id="email" name="email" required />
+      <br /><br />
+      <button type="submit">Cadastrar</button>
     </form>
-</body>
+
+    <hr />
+    <h2>Usuários cadastrados:</h2>
+    <button id="verUsuariosBtn">Ver Usuários</button>
+    <ul id="listaUsuarios"></ul>
+
+    <script>
+      document
+        .getElementById("verUsuariosBtn")
+        .addEventListener("click", async () => {
+          const res = await fetch("/api/usuarios");
+          const usuarios = await res.json();
+
+          const lista = document.getElementById("listaUsuarios");
+          lista.innerHTML = ""; // limpa antes de mostrar
+          usuarios.forEach((u) => {
+            const li = document.createElement("li");
+            li.textContent = `Nome: ${u.nome}, E-mail: ${u.email}`;
+            lista.appendChild(li);
+          });
+        });
+    </script>
+  </body>
 </html>

@@ -1,56 +1,45 @@
-const express = require("express");
+const fs = require("fs");
 const amqp = require("amqplib");
 
-const app = express();
-app.use(express.json());
+const RABBITMQ_URL = "amqp://bruno:123@localhost:5672"; // URL do seu RabbitMQ
+const QUEUE_NAME = "webhook_queue";
 
-// URL RabbitMQ: ajusta com usuário, senha e IP do EC2
-const RABBITMQ_URL = "amqp://bruno:123@localhost:5672";
-const QUEUE_NAME = "webhooks";
-
-let channel;
-
-// Inicializa conexão e canal
-async function initRabbitMQ() {
-  const connection = await amqp.connect(RABBITMQ_URL);
-  channel = await connection.createChannel();
-  await channel.assertQueue(QUEUE_NAME, { durable: true });
-  console.log("Conexão com RabbitMQ estabelecida.");
-}
-
-// Envia mensagem para fila
-function sendToQueue(message) {
-  channel.sendToQueue(QUEUE_NAME, Buffer.from(JSON.stringify(message)), {
-    persistent: true,
-  });
-}
-
-// Endpoint para receber webhooks do ERP Tiny
-app.post("/", (req, res) => {
+// Função para enviar mensagens
+async function sendToQueue(messages) {
   try {
-    // Caminho do arquivo
-    const filePath = path.join(__dirname, "webhook_1_1.json");
+    const connection = await amqp.connect(RABBITMQ_URL);
+    const channel = await connection.createChannel();
+    await channel.assertQueue(QUEUE_NAME, { durable: true });
 
-    // Lê o conteúdo do JSON
-    const fileContent = fs.readFileSync(filePath, "utf-8");
+    messages.forEach((msg) => {
+      const messageBuffer = Buffer.from(JSON.stringify(msg));
+      channel.sendToQueue(QUEUE_NAME, messageBuffer, { persistent: true });
+      console.log("Mensagem enviada:", msg);
+    });
 
-    // Converte para objeto JavaScript
-    const webhookData = JSON.parse(fileContent);
-
-    console.log("📂 Requisição carregada do arquivo:", webhookData);
-
-    // Envia para a fila RabbitMQ
-    sendToQueue(webhookData);
-
-    res.status(200).send({ status: "Arquivo lido e enviado para a fila" });
-  } catch (err) {
-    console.error("❌ Erro ao ler o arquivo JSON:", err);
-    res.status(500).send({ status: "Erro ao processar arquivo JSON" });
+    await channel.close();
+    await connection.close();
+  } catch (error) {
+    console.error("Erro ao enviar para a fila:", error);
   }
-});
+}
 
-// Inicializa RabbitMQ e servidor
-initRabbitMQ().then(() => {
-  const PORT = 3002;
-  app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
+// Ler arquivo JSON
+fs.readFile("webhook_1_1.json", "utf8", (err, data) => {
+  if (err) {
+    console.error("Erro ao ler o arquivo:", err);
+    return;
+  }
+
+  try {
+    const jsonData = JSON.parse(data);
+    // Se o JSON for um array, envia cada item
+    if (Array.isArray(jsonData)) {
+      sendToQueue(jsonData);
+    } else {
+      sendToQueue([jsonData]);
+    }
+  } catch (parseErr) {
+    console.error("Erro ao parsear JSON:", parseErr);
+  }
 });

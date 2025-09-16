@@ -1,39 +1,34 @@
+const fs = require("fs");
 const amqp = require("amqplib");
-const TXT_FILE = "requisicoes.txt";
-// Conectar ao RabbitMQ via AMQP
+
 const RABBITMQ_URL = "amqp://bruno:123@localhost:5672";
-const QUEUE_NAME = "webhooks";
-// Iniciar consumer e criar conexão e canal persistente
+const QUEUE_NAME = "webhook_queue";
+const FILE_NAME = "requisicoes.txt";
+
 async function startConsumer() {
-  const connection = await amqp.connect(RABBITMQ_URL);
-  const channel = await connection.createChannel();
-  await channel.assertQueue(QUEUE_NAME, { durable: true });
+  try {
+    const connection = await amqp.connect(RABBITMQ_URL);
+    const channel = await connection.createChannel();
+    await channel.assertQueue(QUEUE_NAME, { durable: true });
 
-  console.log("Aguardando mensagens na fila...");
+    console.log("Aguardando mensagens...");
 
-  channel.prefetch(5); // Processa até 5 mensagens por vez
-  // Lê mensagens e converte para JSON
-  channel.consume(
-    QUEUE_NAME,
-    async (msg) => {
-      if (msg) {
-        const data = JSON.parse(msg.content.toString());
-        console.log("Processando mensagem:", data);
+    channel.consume(QUEUE_NAME, (msg) => {
+      if (msg !== null) {
+        const messageContent = msg.content.toString();
+        console.log("Mensagem recebida:", messageContent);
 
-        try {
-          // Aqui processa os dados, ex: gravar no RDS
-          // Acrescenta a mensagem no arquivo (cada uma em nova linha)
-          fs.appendFileSync(TXT_FILE, data + "\n");
-          // Confirma processamento e remove da fila
-          channel.ack(msg);
-        } catch (err) {
-          console.error("Erro ao processar mensagem:", err);
-          channel.nack(msg, false, true); // Reenvia à fila
-        }
+        // Gravar no arquivo requisicoes.txt
+        fs.appendFile(FILE_NAME, messageContent + "\n", (err) => {
+          if (err) console.error("Erro ao escrever no arquivo:", err);
+        });
+
+        channel.ack(msg); // Confirma que a mensagem foi processada
       }
-    },
-    { noAck: false }
-  );
+    });
+  } catch (error) {
+    console.error("Erro no consumer:", error);
+  }
 }
 
 startConsumer();

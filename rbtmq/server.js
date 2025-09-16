@@ -27,12 +27,26 @@ function sendToQueue(message) {
 
 // Endpoint para receber webhooks do ERP Tiny
 app.post("/", (req, res) => {
-  const webhookData = req.body;
-  console.log("Webhook recebido:", webhookData);
+  try {
+    // Caminho do arquivo
+    const filePath = path.join(__dirname, "webhook_1_1.json");
 
-  sendToQueue(webhookData);
+    // Lê o conteúdo do JSON
+    const fileContent = fs.readFileSync(filePath, "utf-8");
 
-  res.status(200).send({ status: "Recebido e enfileirado" });
+    // Converte para objeto JavaScript
+    const webhookData = JSON.parse(fileContent);
+
+    console.log("📂 Requisição carregada do arquivo:", webhookData);
+
+    // Envia para a fila RabbitMQ
+    sendToQueue(webhookData);
+
+    res.status(200).send({ status: "Arquivo lido e enviado para a fila" });
+  } catch (err) {
+    console.error("❌ Erro ao ler o arquivo JSON:", err);
+    res.status(500).send({ status: "Erro ao processar arquivo JSON" });
+  }
 });
 
 // Inicializa RabbitMQ e servidor

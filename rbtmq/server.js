@@ -18,7 +18,7 @@ async function sendToQueue(messages, toRetry = false) {
       arguments: {
         "x-dead-letter-exchange": "", // volta para exchange default
         "x-dead-letter-routing-key": QUEUE_NAME, // redireciona para fila principal
-        "x-message-ttl": 60000, // 1 minuto em ms
+        "x-message-ttl": 20000, // 1 minuto em ms
       },
     });
 

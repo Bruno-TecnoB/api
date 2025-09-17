@@ -1,10 +1,12 @@
 const fs = require("fs");
 const amqp = require("amqplib");
 
+// URL RabbitMQ: ajusta com usuário, senha e IP do EC2
 const RABBITMQ_URL = "amqp://bruno:123@localhost:5672";
 const QUEUE_NAME = "webhook_queue";
 const FILE_NAME = "requisicoes.txt";
 
+// Inicializa conexão e canal
 async function startConsumer() {
   try {
     const connection = await amqp.connect(RABBITMQ_URL);

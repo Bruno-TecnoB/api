@@ -14,7 +14,7 @@ async function startConsumer() {
     await channel.assertQueue(QUEUE_NAME, { durable: true });
 
     console.log("Aguardando mensagens...");
-
+    // Recebe mensagens da fila e transforma de "buffer binário" para string
     channel.consume(QUEUE_NAME, (msg) => {
       if (msg !== null) {
         const messageContent = msg.content.toString();

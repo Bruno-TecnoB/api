@@ -1,10 +1,10 @@
 const fs = require("fs");
 const amqp = require("amqplib");
-
+// Conectar ao RabbitMQ
 const RABBITMQ_URL = "amqp://bruno:123@localhost:5672"; // URL do seu RabbitMQ
 const QUEUE_NAME = "webhook_queue";
 
-// Função para enviar mensagens
+// Função para enviar mensagens para a fila
 async function sendToQueue(messages) {
   try {
     const connection = await amqp.connect(RABBITMQ_URL);

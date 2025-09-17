@@ -20,7 +20,7 @@ async function startConsumer() {
       arguments: {
         "x-dead-letter-exchange": "",
         "x-dead-letter-routing-key": QUEUE_NAME,
-        "x-message-ttl": 60000, // 1 min
+        "x-message-ttl": 20000, // 1 min
       },
     });
 

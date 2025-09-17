@@ -1,9 +1,11 @@
 const fs = require("fs");
 const amqp = require("amqplib");
+
 // Conectar ao RabbitMQ
-const RABBITMQ_URL = "amqp://bruno:123@localhost:5672"; // URL do seu RabbitMQ
+const RABBITMQ_URL = "amqp://bruno:123@localhost:5672";
 const QUEUE_NAME = "webhook_queue";
 const RETRY_QUEUE = "webhook_retry"; // Fila de retry
+const FILE_NAME = "webhook_1_1.json"; // Arquivo JSON
 
 // Função para enviar mensagens para a fila
 async function sendToQueue(messages, toRetry = false) {
@@ -16,13 +18,12 @@ async function sendToQueue(messages, toRetry = false) {
     await channel.assertQueue(RETRY_QUEUE, {
       durable: true,
       arguments: {
-        "x-dead-letter-exchange": "", // volta para exchange default
-        "x-dead-letter-routing-key": QUEUE_NAME, // redireciona para fila principal
-        "x-message-ttl": 20000, // 1 minuto em ms
+        "x-dead-letter-exchange": "",
+        "x-dead-letter-routing-key": QUEUE_NAME,
+        "x-message-ttl": 20000, // 20 segundos
       },
     });
 
-    // Decide para qual fila enviar
     const targetQueue = toRetry ? RETRY_QUEUE : QUEUE_NAME;
 
     messages.forEach((msg) => {
@@ -38,29 +39,39 @@ async function sendToQueue(messages, toRetry = false) {
   }
 }
 
-// Ler arquivo JSON
-fs.readFile("webhook_1_1.json", "utf8", (err, data) => {
-  if (err) {
-    console.error("Erro ao ler o arquivo:", err);
-    return;
-  }
-
-  // 1 - Checa se o arquivo está vazio
-  if (!data || data.trim() === "") {
-    console.log("⚠️ Arquivo JSON vazio, enviando para retry...");
-    sendToQueue([{}], true); // envia objeto vazio para fila de retry
-    return;
-  }
-
-  // 2 - Se não estiver vazio, tenta parsear
-  try {
-    const jsonData = JSON.parse(data);
-    if (Array.isArray(jsonData)) {
-      sendToQueue(jsonData);
-    } else {
-      sendToQueue([jsonData]);
+// Função para processar o arquivo JSON
+function processFile() {
+  fs.readFile(FILE_NAME, "utf8", (err, data) => {
+    if (err) {
+      console.error("Erro ao ler o arquivo:", err);
+      return;
     }
-  } catch (parseErr) {
-    console.error("Erro ao parsear JSON:", parseErr);
-  }
-});
+
+    // Arquivo vazio → enviar para fila de retry
+    if (!data || data.trim() === "") {
+      console.log("⚠️ Arquivo JSON vazio, enviando para retry...");
+      sendToQueue([{}], true);
+      return;
+    }
+
+    // Arquivo com conteúdo → parsear e enviar para fila principal
+    try {
+      const jsonData = JSON.parse(data);
+      if (Array.isArray(jsonData)) {
+        sendToQueue(jsonData);
+      } else {
+        sendToQueue([jsonData]);
+      }
+    } catch (parseErr) {
+      console.error("Erro ao parsear JSON:", parseErr);
+    }
+  });
+}
+
+// Executa imediatamente na inicialização
+processFile();
+
+// Executa a cada 20 segundos
+setInterval(() => {
+  processFile();
+}, 20000);

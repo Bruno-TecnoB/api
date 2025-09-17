@@ -11,10 +11,6 @@ async function startConsumer() {
   try {
     const connection = await amqp.connect(RABBITMQ_URL);
     const channel = await connection.createChannel();
-    await channel.assertQueue(QUEUE_NAME, { durable: true });
-
-    // 🔑 Permite apenas 5 mensagens por vez
-    channel.prefetch(5);
     console.log("Aguardando mensagens...");
     // Recebe mensagens da fila e transforma de "buffer binário" para string
     channel.consume(QUEUE_NAME, (msg) => {
@@ -22,22 +18,12 @@ async function startConsumer() {
         const messageContent = msg.content.toString();
         console.log("Mensagem recebida:", messageContent);
 
-        setTimeout(() => {
-          fs.appendFile(FILE_NAME, messageContent + "\n", (err) => {
-            if (err) console.error("Erro ao escrever no arquivo:", err);
-          });
-
-          // Só depois de terminar o processamento confirmamos
-          channel.ack(msg);
-          console.log("Mensagem processada e confirmada!");
-        }, 1000); // 1s para simular processamento
-
         // Gravar no arquivo requisicoes.txt
         fs.appendFile(FILE_NAME, messageContent + "\n", (err) => {
           if (err) console.error("Erro ao escrever no arquivo:", err);
         });
 
-        //channel.ack(msg); // Confirma que a mensagem foi processada
+        channel.ack(msg); // Confirma que a mensagem foi processada
       }
     });
   } catch (error) {

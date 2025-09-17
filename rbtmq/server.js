@@ -45,19 +45,17 @@ fs.readFile("webhook_1_1.json", "utf8", (err, data) => {
     return;
   }
 
+  // 1 - Checa se o arquivo está vazio
+  if (!data || data.trim() === "") {
+    console.log("⚠️ Arquivo JSON vazio, enviando para retry...");
+    sendToQueue([{}], true); // envia objeto vazio para fila de retry
+    return;
+  }
+
+  // 2 - Se não estiver vazio, tenta parsear
   try {
     const jsonData = JSON.parse(data);
-
-    // Se JSON vazio → manda para retry
-    if (
-      !jsonData ||
-      (Array.isArray(jsonData) && jsonData.length === 0) ||
-      (typeof jsonData === "object" && Object.keys(jsonData).length === 0)
-    ) {
-      console.log("⚠️ JSON vazio, enviando para retry...");
-      sendToQueue([{}], true); // manda objeto vazio só para ocupar a mensagem
-      // Se for array → manda cada item
-    } else if (Array.isArray(jsonData)) {
+    if (Array.isArray(jsonData)) {
       sendToQueue(jsonData);
     } else {
       sendToQueue([jsonData]);

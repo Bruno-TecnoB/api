@@ -107,6 +107,4 @@ sequelize.sync().then(() => {
   });
 });
 
-module.exports = {
-  getChannel: () => channel,
-};
+module.exports = { connectRabbitMQ };

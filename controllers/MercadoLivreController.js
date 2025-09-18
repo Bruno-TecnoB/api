@@ -2,7 +2,7 @@
 const axios = require("axios");
 const fs = require("fs");
 const path = require("path");
-const { getChannel } = require("../app");
+const getChannel = require("../app");
 require("dotenv").config({ quiet: true });
 const { QUEUE_NAME, RETRY_QUEUE } = "../shared/constants/rabbitmq";
 

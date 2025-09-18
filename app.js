@@ -6,6 +6,8 @@ require("dotenv").config({
   quiet: true,
 });
 
+const { QUEUE_NAME, RETRY_QUEUE } = "../shared/constants/rabbitmq";
+
 //routes
 const integracaoTiny = require("./routes/TinyRouter");
 const integracaoML = require("./routes/MercadoLivreRouter");
@@ -24,8 +26,6 @@ app.use(bodyParser.json());
 
 // Configurações RabbitMQ
 const RABBITMQ_URL = "amqp://bruno:123@localhost:5672";
-const QUEUE_NAME = "webhook_queue";
-const RETRY_QUEUE = "webhook_retry";
 let channel;
 
 // Função para conectar e configurar filas
@@ -109,6 +109,4 @@ sequelize.sync().then(() => {
 
 module.exports = {
   getChannel: () => channel,
-  QUEUE_NAME,
-  RETRY_QUEUE,
 };

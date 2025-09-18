@@ -3,8 +3,7 @@ const controller = require("./controllers/MercadoLivreController");
 
 // URL RabbitMQ: ajusta com usuário, senha e IP do EC2
 const RABBITMQ_URL = "amqp://bruno:123@localhost:5672";
-const QUEUE_NAME = "webhook_queue";
-const RETRY_QUEUE = "webhook_retry";
+const { QUEUE_NAME, RETRY_QUEUE } = "../shared/constants/rabbitmq";
 // Inicializa conexão e canal
 async function startConsumer() {
   try {

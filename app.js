@@ -8,6 +8,7 @@ require("dotenv").config({
 
 //routes
 const integracaoTiny = require("./routes/TinyRouter");
+const integracaoML = require("./routes/MercadoLivreRouter");
 const ApiMercadolivre = require("./routes/MercadoLivreRouter");
 const integracaoMagalu = require("./routes/MagaluRouter");
 const integracaoShopee = require("./routes/ShopeeRouter");
@@ -61,7 +62,13 @@ app.get("/integracao/callback/", (req, res) => {
 });
 
 //Rotas que são definidas no /ROUTES
-app.use("/integracao", integracaoTiny, integracaoMagalu, integracaoShopee);
+app.use(
+  "/integracao",
+  integracaoTiny,
+  integracaoML,
+  integracaoMagalu,
+  integracaoShopee
+);
 
 app.use("/", ApiMercadolivre);
 
@@ -100,7 +107,7 @@ sequelize.sync().then(() => {
   });
 });
 
-module.exports = {
+export default {
   getChannel: () => channel,
   QUEUE_NAME,
   RETRY_QUEUE,

@@ -11,7 +11,7 @@ const { QUEUE_NAME, RETRY_QUEUE } = require("./shared/constants/rabbitmq");
 //routes
 const integracaoTiny = require("./routes/TinyRouter");
 // const integracaoML = require("./routes/MercadoLivreRouter");
-const ApiMercadolivre = require("./routes/MercadoLivreRouter");
+//const ApiMercadolivre = require("./routes/MercadoLivreRouter");
 const integracaoMagalu = require("./routes/MagaluRouter");
 const integracaoShopee = require("./routes/ShopeeRouter");
 const webhook = require("./routes/WebhookRouter");
@@ -70,7 +70,7 @@ app.use(
   integracaoShopee
 );
 
-app.use("/", ApiMercadolivre);
+//app.use("/", ApiMercadolivre);
 
 app.use("/webhook", webhook);
 

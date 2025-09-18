@@ -87,10 +87,6 @@ app.post("/", (req, res) => {
       persistent: true,
     });
 
-    console.log(
-      "📥 Webhook recebido e enviado para a fila principal:",
-      payload
-    );
     res.status(200).send("Recebido com sucesso");
   } catch (err) {
     console.error("❌ Erro ao processar webhook:", err);

@@ -122,7 +122,7 @@ async function obterDespacho(req, res) {
       expected_date: expectedDate,
     };
 
-    if (!shippingId) {
+    if (expectedDate) {
       const channel = getChannel();
       if (channel) {
         channel.sendToQueue(RETRY_QUEUE, Buffer.from(JSON.stringify(pedido)), {

@@ -1,4 +1,4 @@
-import { express } from "express";
+import express from "express";
 import amqp from "amqplib";
 import bodyParser from "body-parser";
 import path from "path";

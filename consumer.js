@@ -4,13 +4,12 @@ const controller = require("./controllers/MercadoLivreController");
 // URL RabbitMQ: ajusta com usuário, senha e IP do EC2
 const RABBITMQ_URL = "amqp://bruno:123@localhost:5672";
 const { QUEUE_NAME, RETRY_QUEUE } = require("./shared/constants/rabbitmq");
-let channel;
 
 // Inicializa conexão e canal
 async function startConsumer() {
   try {
     const connection = await amqp.connect(RABBITMQ_URL);
-    channel = await connection.createChannel();
+    const channel = await connection.createChannel();
     console.log("Aguardando mensagens...");
     // Garante que a fila exista
     await channel.assertQueue(QUEUE_NAME, { durable: true });

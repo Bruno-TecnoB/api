@@ -26,13 +26,12 @@ app.use(bodyParser.json());
 
 // Configurações RabbitMQ
 const RABBITMQ_URL = "amqp://bruno:123@localhost:5672";
-let channel;
 
 // Função para conectar e configurar filas
 async function connectRabbitMQ() {
   try {
     const connection = await amqp.connect(RABBITMQ_URL);
-    channel = await connection.createChannel();
+    const channel = await connection.createChannel();
 
     // Fila principal
     await channel.assertQueue(QUEUE_NAME, { durable: true });

@@ -9,7 +9,7 @@ const integracaoTiny = require("./routes/TinyRouter");
 const integracaoML = require("./routes/MercadoLivreRouter");
 const ApiMercadolivre = require("./routes/MercadoLivreRouter");
 const integracaoMagalu = require("./routes/MagaluRouter");
-const integracaoShopee = require("./routes/shopeeRouter");
+const integracaoShopee = require("./routes/ShopeeRouter");
 const webhook = require("./routes/WebhookRouter");
 const sequelize = require("./db/conn");
 

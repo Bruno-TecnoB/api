@@ -43,7 +43,7 @@ async function connectRabbitMQ() {
       arguments: {
         "x-dead-letter-exchange": "",
         "x-dead-letter-routing-key": QUEUE_NAME,
-        "x-message-ttl": 300000, // 5 minutos
+        "x-message-ttl": 20000, // 5 minutos
       },
     });
 

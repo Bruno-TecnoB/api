@@ -113,17 +113,8 @@ async function obterDespacho(req, res) {
       expectedDate = shippingResp.data?.expected_date;
     }
 
-    const pedido = {
-      order_id: idPedido,
-      id_tiny: numeroPedido,
-      plataforma: "Mercado Livre",
-      status: situacaoDefinida,
-      status_ml: mlStatus,
-      expected_date: expectedDate,
-    };
-
     if (!expectedDate) {
-      console.log("Enviando para a fila Retry");
+      // console.log("Enviando para a fila Retry");
       if (channel) {
         channel.sendToQueue(RETRY_QUEUE, Buffer.from(JSON.stringify(pedido)), {
           persistent: true,
@@ -132,8 +123,21 @@ async function obterDespacho(req, res) {
           "Pedido sem expectedDate, enviado para fila retry:",
           pedido
         );
+        return res.status(202).json({
+          message:
+            "Pedido enviado para fila de retry por falta de expectedDate",
+        });
       }
     }
+
+    const pedido = {
+      order_id: idPedido,
+      id_tiny: numeroPedido,
+      plataforma: "Mercado Livre",
+      status: situacaoDefinida,
+      status_ml: mlStatus,
+      expected_date: expectedDate,
+    };
 
     salvarOuAtualizarPedido(pedido);
     return res.status(200).json(pedido);

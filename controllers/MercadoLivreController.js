@@ -115,13 +115,10 @@ async function obterDespacho(req, res) {
     if (!expectedDate) {
       // console.log("Enviando para a fila Retry");
       if (channel) {
-        channel.sendToQueue(RETRY_QUEUE, Buffer.from(JSON.stringify(pedido)), {
+        channel.sendToQueue(RETRY_QUEUE, Buffer.from(JSON.stringify(body)), {
           persistent: true,
         });
-        console.log(
-          "Pedido sem expectedDate, enviado para fila retry:",
-          pedido
-        );
+        console.log("Pedido sem expectedDate, enviado para fila retry:", body);
       }
       return res.status(202).json({
         message: "Pedido enviado para fila de retry por falta de expectedDate",

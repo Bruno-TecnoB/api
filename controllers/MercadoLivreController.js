@@ -2,9 +2,10 @@
 const axios = require("axios");
 const fs = require("fs");
 const path = require("path");
-const getChannel = require("../app");
+const { channel } = require("../app");
 require("dotenv").config({ quiet: true });
 const { QUEUE_NAME, RETRY_QUEUE } = require("../shared/constants/rabbitmq");
+const { channel } = require("diagnostics_channel");
 
 console.log("Fila principal:", QUEUE_NAME);
 
@@ -123,7 +124,7 @@ async function obterDespacho(req, res) {
     };
 
     if (expectedDate) {
-      const channel = getChannel();
+      const channel = channel();
       if (channel) {
         channel.sendToQueue(RETRY_QUEUE, Buffer.from(JSON.stringify(pedido)), {
           persistent: true,

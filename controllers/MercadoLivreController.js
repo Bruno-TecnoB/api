@@ -110,7 +110,7 @@ async function obterDespacho(req, res) {
         { headers: { Authorization: `Bearer ${process.env.TOKEN_ML}` } }
       );
       mlStatus = shippingResp.data?.status;
-      //expectedDate = shippingResp.data?.expected_date;
+      expectedDate = shippingResp.data?.expected_date;
     }
 
     const pedido = {

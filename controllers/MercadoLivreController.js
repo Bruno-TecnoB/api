@@ -123,12 +123,13 @@ async function obterDespacho(req, res) {
     };
 
     if (!expectedDate) {
+      console.log("Enviando para a fila Retry");
       if (channel) {
         channel.sendToQueue(RETRY_QUEUE, Buffer.from(JSON.stringify(pedido)), {
           persistent: true,
         });
         console.log(
-          "⚠️ Pedido sem shipment_id, enviado para fila retry:",
+          "Pedido sem expectedDate, enviado para fila retry:",
           pedido
         );
       }

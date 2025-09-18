@@ -107,7 +107,7 @@ sequelize.sync().then(() => {
   });
 });
 
-export const variaveis = {
+module.exports = {
   getChannel: () => channel,
   QUEUE_NAME,
   RETRY_QUEUE,

@@ -23,7 +23,7 @@ async function obterDespacho(req, res) {
   let order_id = body?.dados?.idPedidoEcommerce;
   const codigoSituacao = (body?.dados?.codigoSituacao || "").toLowerCase();
   let mlStatus = null;
-  let expectedDate = null;
+  let expectedDate;
   let situacaoDefinida;
   let idPedido;
 

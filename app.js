@@ -38,14 +38,7 @@ async function connectRabbitMQ() {
     await channel.assertQueue(QUEUE_NAME, { durable: true });
 
     // Fila de retry com TTL de 5 minutos (300000 ms) e DLX para a principal
-    await channel.assertQueue(RETRY_QUEUE, {
-      durable: true,
-      arguments: {
-        "x-dead-letter-exchange": "",
-        "x-dead-letter-routing-key": QUEUE_NAME,
-        "x-message-ttl": 20000, // 5 minutos
-      },
-    });
+    await channel.assertQueue(RETRY_QUEUE, { durable: true });
 
     console.log("✅ RabbitMQ conectado. Filas:", QUEUE_NAME, "e", RETRY_QUEUE);
   } catch (error) {
@@ -102,5 +95,3 @@ sequelize.sync().then(() => {
     console.log("Servidor rodando na porta 5000");
   });
 });
-
-module.exports = { channel, connectRabbitMQ };

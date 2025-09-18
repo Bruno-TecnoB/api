@@ -57,3 +57,4 @@ async function startConsumer() {
 }
 
 startConsumer();
+module.exports = { channel, startConsumer };

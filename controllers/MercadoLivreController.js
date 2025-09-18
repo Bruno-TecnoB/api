@@ -110,7 +110,7 @@ async function obterDespacho(req, res) {
         { headers: { Authorization: `Bearer ${process.env.TOKEN_ML}` } }
       );
       mlStatus = shippingResp.data?.status;
-      expectedDate = shippingResp.data?.expected_date;
+      //expectedDate = shippingResp.data?.expected_date;
     }
 
     const pedido = {
@@ -122,7 +122,7 @@ async function obterDespacho(req, res) {
       expected_date: expectedDate,
     };
 
-    if (expectedDate) {
+    if (!expectedDate) {
       if (channel) {
         channel.sendToQueue(RETRY_QUEUE, Buffer.from(JSON.stringify(pedido)), {
           persistent: true,

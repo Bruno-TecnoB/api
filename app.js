@@ -89,6 +89,8 @@ app.post("/", (req, res) => {
 
 connectRabbitMQ();
 
+const consumer = require("./consumer");
+consumer.startConsumer();
 // sequelize.sync({ force: true }).then(() => {
 sequelize.sync().then(() => {
   app.listen(process.env.PORT, () => {

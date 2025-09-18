@@ -2,9 +2,7 @@ import express from "express";
 import amqp from "amqplib";
 import bodyParser from "body-parser";
 import path from "path";
-require("dotenv").config({
-  quiet: true,
-});
+import "dotenv";
 
 //routes
 const integracaoTiny = require("./routes/TinyRouter");

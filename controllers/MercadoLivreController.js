@@ -17,7 +17,6 @@ if (fs.existsSync(arquivoPath)) {
 
 async function obterDespacho(req, res) {
   const body = req.body;
-  console.log(body);
   const numeroPedido = body?.dados?.id;
   const plataforma = (body?.dados?.nomeEcommerce || "").trim().toLowerCase();
   let order_id = body?.dados?.idPedidoEcommerce;

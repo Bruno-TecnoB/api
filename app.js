@@ -106,3 +106,9 @@ sequelize.sync().then(() => {
     console.log("Servidor rodando na porta 5000");
   });
 });
+
+module.exports = {
+  getChannel: () => channel,
+  QUEUE_NAME,
+  RETRY_QUEUE,
+};

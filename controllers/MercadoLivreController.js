@@ -2,6 +2,7 @@
 const axios = require("axios");
 const fs = require("fs");
 const path = require("path");
+const { getChannel, RETRY_QUEUE } = require("../app");
 require("dotenv").config({ quiet: true });
 
 const arquivoPath = path.join(__dirname, "../json/pedidos.json");
@@ -117,6 +118,19 @@ async function obterDespacho(req, res) {
       status_ml: mlStatus,
       expected_date: expectedDate,
     };
+
+    if (!shippingId) {
+      const channel = getChannel();
+      if (channel) {
+        channel.sendToQueue(RETRY_QUEUE, Buffer.from(JSON.stringify(pedido)), {
+          persistent: true,
+        });
+        console.log(
+          "⚠️ Pedido sem shipment_id, enviado para fila retry:",
+          pedido
+        );
+      }
+    }
 
     salvarOuAtualizarPedido(pedido);
     return res.status(200).json(pedido);

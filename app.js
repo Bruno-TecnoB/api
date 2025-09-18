@@ -38,7 +38,14 @@ async function connectRabbitMQ() {
     await channel.assertQueue(QUEUE_NAME, { durable: true });
 
     // Fila de retry com TTL de 5 minutos (300000 ms) e DLX para a principal
-    //await channel.assertQueue(RETRY_QUEUE, { durable: true });
+    await channel.assertQueue(RETRY_QUEUE, {
+      durable: true,
+      arguments: {
+        "x-dead-letter-exchange": "",
+        "x-dead-letter-routing-key": QUEUE_NAME,
+        "x-message-ttl": 20000,
+      },
+    });
 
     console.log("✅ RabbitMQ conectado. Filas:", QUEUE_NAME, "e", RETRY_QUEUE);
   } catch (error) {

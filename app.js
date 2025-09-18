@@ -7,7 +7,6 @@ require("dotenv").config({
 });
 
 const { QUEUE_NAME, RETRY_QUEUE } = require("./shared/constants/rabbitmq");
-console.log("QUEUE_NAME:", QUEUE_NAME, "RETRY_QUEUE:", RETRY_QUEUE);
 
 //routes
 const integracaoTiny = require("./routes/TinyRouter");

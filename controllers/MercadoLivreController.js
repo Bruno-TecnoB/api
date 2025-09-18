@@ -4,7 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const getChannel = require("../app");
 require("dotenv").config({ quiet: true });
-const { QUEUE_NAME, RETRY_QUEUE } = require("./shared/constants/rabbitmq");
+const { QUEUE_NAME, RETRY_QUEUE } = require("../shared/constants/rabbitmq");
 
 console.log("Fila principal:", QUEUE_NAME);
 

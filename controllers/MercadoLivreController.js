@@ -4,6 +4,9 @@ const fs = require("fs");
 const path = require("path");
 const { getChannel, RETRY_QUEUE } = require("../app");
 require("dotenv").config({ quiet: true });
+const { QUEUE_NAME } = require("../app");
+
+console.log("Fila principal:", QUEUE_NAME);
 
 const arquivoPath = path.join(__dirname, "../json/pedidos.json");
 

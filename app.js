@@ -1,8 +1,10 @@
-import express from "express";
-import amqp from "amqplib";
-import bodyParser from "body-parser";
-import path from "path";
-import "dotenv";
+const express = require("express");
+const amqp = require("amqplib");
+const bodyParser = require("body-parser");
+const path = require("path");
+require("dotenv").config({
+  quiet: true,
+});
 
 //routes
 const integracaoTiny = require("./routes/TinyRouter");
@@ -105,7 +107,7 @@ sequelize.sync().then(() => {
   });
 });
 
-export default {
+export const variaveis = {
   getChannel: () => channel,
   QUEUE_NAME,
   RETRY_QUEUE,

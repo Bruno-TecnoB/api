@@ -6,11 +6,11 @@ require("dotenv").config({
   quiet: true,
 });
 
-const { QUEUE_NAME, RETRY_QUEUE } = "../shared/constants/rabbitmq";
+const { QUEUE_NAME, RETRY_QUEUE } = require("../shared/constants/rabbitmq");
 
 //routes
 const integracaoTiny = require("./routes/TinyRouter");
-const integracaoML = require("./routes/MercadoLivreRouter");
+// const integracaoML = require("./routes/MercadoLivreRouter");
 const ApiMercadolivre = require("./routes/MercadoLivreRouter");
 const integracaoMagalu = require("./routes/MagaluRouter");
 const integracaoShopee = require("./routes/ShopeeRouter");
@@ -65,7 +65,7 @@ app.get("/integracao/callback/", (req, res) => {
 app.use(
   "/integracao",
   integracaoTiny,
-  integracaoML,
+  // integracaoML,
   integracaoMagalu,
   integracaoShopee
 );

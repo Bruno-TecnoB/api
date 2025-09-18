@@ -127,6 +127,9 @@ async function obterDespacho(req, res) {
             "Pedido enviado para fila de retry por falta de expectedDate",
         });
       }
+      return res.status(202).json({
+        message: "Pedido enviado para fila de retry por falta de expectedDate",
+      });
     }
 
     const pedido = {

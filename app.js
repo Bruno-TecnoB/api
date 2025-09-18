@@ -1,7 +1,7 @@
-const express = require("express");
-const amqp = require("amqplib");
-const bodyParser = require("body-parser");
-const path = require("path");
+import { express } from "express";
+import amqp from "amqplib";
+import bodyParser from "body-parser";
+import path from "path";
 require("dotenv").config({
   quiet: true,
 });

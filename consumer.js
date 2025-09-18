@@ -28,14 +28,28 @@ async function startConsumer() {
       QUEUE_NAME,
       (msg) => {
         if (msg) {
-          controller.obterDespacho({
-            body: JSON.parse(msg.content.toString()),
-          });
+          // Mock do objeto res do Express
+          const res = {
+            status: function (code) {
+              this.statusCode = code;
+              return this;
+            },
+            json: function (data) {
+              console.log("Resposta do controller:", data);
+              return data;
+            },
+          };
+          controller.obterDespacho(
+            {
+              body: JSON.parse(msg.content.toString()),
+            },
+            res
+          );
           // Confirma processamento
           channel.ack(msg);
         }
       },
-      { noAck: false } // garante que a mensagem só é removida após o ack
+      { noAck: false }
     );
   } catch (err) {
     console.error("❌ Erro no consumer:", err);

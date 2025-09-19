@@ -1,104 +1,45 @@
 const express = require("express");
-const amqp = require("amqplib");
 const bodyParser = require("body-parser");
-const path = require("path");
-require("dotenv").config({
-  quiet: true,
-});
-
-const { QUEUE_NAME, RETRY_QUEUE } = require("./shared/constants/rabbitmq");
-
-//routes
-const integracaoTiny = require("./routes/TinyRouter");
-// const integracaoML = require("./routes/MercadoLivreRouter");
-//const ApiMercadolivre = require("./routes/MercadoLivreRouter");
-const integracaoMagalu = require("./routes/MagaluRouter");
-const integracaoShopee = require("./routes/ShopeeRouter");
-const webhook = require("./routes/WebhookRouter");
+require("dotenv").config({ quiet: true });
+const { connectRabbitMQ, QUEUE_NAME } = require("./rabbitmq");
 const sequelize = require("./db/conn");
 
 const app = express();
-
 app.use(express.json());
-app.use(express.text({ type: "*/*" }));
-app.use(express.urlencoded({ extends: true }));
+app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// Configurações RabbitMQ
-const RABBITMQ_URL = "amqp://bruno:123@localhost:5672";
-
-// Função para conectar e configurar filas
-async function connectRabbitMQ() {
+// Conexão RabbitMQ antes de iniciar o servidor
+(async () => {
   try {
-    const connection = await amqp.connect(RABBITMQ_URL);
-    const channel = await connection.createChannel();
+    channel = await connectRabbitMQ();
 
-    // Fila principal
-    await channel.assertQueue(QUEUE_NAME, { durable: true });
-
-    // Fila de retry com TTL de 5 minutos (300000 ms) e DLX para a principal
-    await channel.assertQueue(RETRY_QUEUE, {
-      durable: true,
-      arguments: {
-        "x-dead-letter-exchange": "",
-        "x-dead-letter-routing-key": QUEUE_NAME,
-        "x-message-ttl": 20000,
-      },
+    // Inicializa servidor só depois de conectar RabbitMQ
+    await sequelize.sync();
+    app.listen(process.env.PORT || 5000, () => {
+      console.log("Servidor rodando na porta 5000");
     });
-
-    console.log("✅ RabbitMQ conectado. Filas:", QUEUE_NAME, "e", RETRY_QUEUE);
-  } catch (error) {
-    console.error("❌ Erro ao conectar no RabbitMQ:", error);
+  } catch (err) {
+    console.error("Erro ao inicializar RabbitMQ:", err);
   }
-}
+})();
 
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "views", "index.html"));
-});
-
-app.get("/integracao/callback/", (req, res) => {
-  res.sendFile(path.join(__dirname, "views", "callback.html"));
-});
-
-//Rotas que são definidas no /ROUTES
-app.use(
-  "/integracao",
-  integracaoTiny,
-  // integracaoML,
-  integracaoMagalu,
-  integracaoShopee
-);
-
-//app.use("/", ApiMercadolivre);
-
-app.use("/webhook", webhook);
-
-// Rota do webhook: envia tudo para a fila principal
-app.post("/", (req, res) => {
+// Endpoint que recebe webhook
+app.post("/", async (req, res) => {
   try {
-    const payload = req.body;
-
-    if (!channel) {
+    if (!channel)
       return res.status(500).send("Canal RabbitMQ não inicializado.");
-    }
 
+    const payload = req.body;
     channel.sendToQueue(QUEUE_NAME, Buffer.from(JSON.stringify(payload)), {
       persistent: true,
     });
 
-    res.status(200).send("Recebido com sucesso");
+    res.status(200).send(200);
   } catch (err) {
-    console.error("❌ Erro ao processar webhook:", err);
+    console.error("Erro ao processar webhook:", err);
     res.status(500).send("Erro interno");
   }
 });
 
-connectRabbitMQ();
-
-const consumer = require("./consumer");
-// sequelize.sync({ force: true }).then(() => {
-sequelize.sync().then(() => {
-  app.listen(process.env.PORT, () => {
-    console.log("Servidor rodando na porta 5000");
-  });
-});
+module.exports = { app };

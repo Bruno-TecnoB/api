@@ -1,58 +1,40 @@
-// const IntegracaoML = require("../models/MercadoLivreModel");
 const axios = require("axios");
-const fs = require("fs");
+const fs = require("fs").promises;
 const path = require("path");
-const { channel } = require("../consumer");
-require("dotenv").config({ quiet: true });
-const { QUEUE_NAME, RETRY_QUEUE } = require("../shared/constants/rabbitmq");
-
-console.log("Fila principal:", QUEUE_NAME);
+const { connectRabbitMQ } = require("../rabbitmq");
+const { RETRY_QUEUE } = require("../rabbitmq");
+require("dotenv").config();
 
 const arquivoPath = path.join(__dirname, "../json/pedidos.json");
 
-if (fs.existsSync(arquivoPath)) {
-  const conteudo = fs.readFileSync(arquivoPath, "utf-8");
-  dadosExistentes = JSON.parse(conteudo);
-}
-
-async function obterDespacho(req, res) {
+// Função principal para processar payload
+async function processarPayload(req, res) {
   const body = req.body;
+  console.log("Body_ProcessarPayload:", body);
   const numeroPedido = body?.dados?.id;
   const plataforma = (body?.dados?.nomeEcommerce || "").trim().toLowerCase();
   let order_id = body?.dados?.idPedidoEcommerce;
   const codigoSituacao = (body?.dados?.codigoSituacao || "").toLowerCase();
-  let mlStatus = null;
-  let expectedDate;
-  let situacaoDefinida;
-  let idPedido;
+
+  if (!order_id) {
+    return res.status(400).json({ error: "Nenhum pedido encontrado." });
+  }
+
+  if (plataforma !== "mercado livre") {
+    return res.status(200).json({ message: "Plataforma não é Mercado Livre" });
+  }
+
+  // Mapear situação
+  const situacoesMap = {
+    aberto: "em aberto",
+    aprovado: "Aguardando Separação",
+    preparando_envio: "em separação",
+    faturado: "separados",
+  };
+  const situacaoDefinida = situacoesMap[codigoSituacao] || codigoSituacao;
 
   try {
-    if (!order_id) {
-      return res.status(400).json({ error: "Nenhum pedido encontrado." });
-    }
-
-    if (plataforma !== "mercado livre") {
-      return res
-        .status(200)
-        .json({ message: "Plataforma não é Mercado Livre" });
-    }
-
-    switch (codigoSituacao) {
-      case "aberto":
-        situacaoDefinida = "em aberto";
-        break;
-      case "aprovado":
-        situacaoDefinida = "Aguardando Separação";
-        break;
-      case "preparando_envio":
-        situacaoDefinida = "em separação";
-        break;
-      case "faturado":
-        situacaoDefinida = "separados";
-        break;
-      default:
-        situacaoDefinida = codigoSituacao;
-    }
+    let idPedido;
 
     if (order_id.startsWith("O")) {
       idPedido = order_id.slice(1);
@@ -82,13 +64,13 @@ async function obterDespacho(req, res) {
       idPedido = order_id;
     }
 
+    // Buscar shippingId no ML
     let shippingId = null;
     try {
       const responseOrder = await axios.get(
         `https://api.mercadolibre.com/orders/${idPedido}`,
         { headers: { Authorization: `Bearer ${process.env.TOKEN_ML}` } }
       );
-
       shippingId = responseOrder.data?.shipping?.id;
     } catch (err) {
       if (err.response?.status === 404) {
@@ -96,12 +78,15 @@ async function obterDespacho(req, res) {
           `https://api.mercadolibre.com/packs/${idPedido}`,
           { headers: { Authorization: `Bearer ${process.env.TOKEN_ML}` } }
         );
-
         shippingId = responsePack.data?.shipment?.id;
       } else {
         throw err;
       }
     }
+
+    // Buscar status e expected_date
+    let mlStatus = null;
+    let expectedDate = null;
 
     if (shippingId) {
       const shippingResp = await axios.get(
@@ -109,22 +94,21 @@ async function obterDespacho(req, res) {
         { headers: { Authorization: `Bearer ${process.env.TOKEN_ML}` } }
       );
       mlStatus = shippingResp.data?.status;
-      //expectedDate = shippingResp.data?.expected_date;
+      expectedDate = shippingResp.data?.expected_date;
     }
 
     if (!expectedDate) {
-      // console.log("Enviando para a fila Retry");
-      if (channel) {
-        channel.sendToQueue(RETRY_QUEUE, Buffer.from(JSON.stringify(body)), {
-          persistent: true,
-        });
-        console.log("Pedido sem expectedDate, enviado para fila retry:", body);
-      }
+      const channel = await connectRabbitMQ();
+      channel.sendToQueue(RETRY_QUEUE, Buffer.from(JSON.stringify(body)), {
+        persistent: true,
+      });
+      console.log("Pedido sem expectedDate enviado para fila retry:", body);
       return res.status(202).json({
         message: "Pedido enviado para fila de retry por falta de expectedDate",
       });
     }
 
+    // Montar pedido
     const pedido = {
       order_id: idPedido,
       id_tiny: numeroPedido,
@@ -132,18 +116,25 @@ async function obterDespacho(req, res) {
       status: situacaoDefinida,
       status_ml: mlStatus,
       expected_date: expectedDate,
+      updated_at: new Date().toISOString(),
     };
 
-    salvarOuAtualizarPedido(pedido);
-    return res.status(200).json(pedido);
+    // Salvar ou atualizar de forma segura
+    await salvarOuAtualizarPedido(pedido);
+    return pedido;
   } catch (err) {
-    console.error("Erro em obterDespacho:", err.response?.data || err.message);
-    return res.status(500).json({ error: err.response?.data || err.message });
+    console.error(
+      "Erro em processarPayload:",
+      err?.response?.data || err.message || err
+    );
+    return res
+      .status(500)
+      .json({ error: err?.response?.data || err.message || err });
   }
 }
 
-function salvarOuAtualizarPedido(payload) {
-  const dadosExistentes = carregarPedidos();
+async function salvarOuAtualizarPedido(payload) {
+  const dadosExistentes = await carregarPedidos();
   const index = dadosExistentes.findIndex(
     (p) => p.order_id === payload.order_id
   );
@@ -154,18 +145,18 @@ function salvarOuAtualizarPedido(payload) {
     dadosExistentes.push(payload);
   }
 
-  fs.writeFileSync(arquivoPath, JSON.stringify(dadosExistentes, null, 2));
+  await fs.writeFile(arquivoPath, JSON.stringify(dadosExistentes, null, 2));
 }
 
-function carregarPedidos() {
-  if (!fs.existsSync(arquivoPath)) return [];
-  const conteudo = fs.readFileSync(arquivoPath, "utf-8");
+async function carregarPedidos() {
   try {
+    const conteudo = await fs.readFile(arquivoPath, "utf-8");
     return JSON.parse(conteudo);
   } catch (err) {
+    if (err.code === "ENOENT") return []; // Arquivo não existe
     console.error("Erro ao ler o arquivo:", err);
     return [];
   }
 }
 
-module.exports = { obterDespacho };
+module.exports = { processarPayload };

@@ -34,7 +34,7 @@ app.post("/", async (req, res) => {
     channel.sendToQueue(QUEUE_NAME, Buffer.from(JSON.stringify(payload)), {
       persistent: true,
     });
-    console.log("Payload: ", body);
+    console.log("Payload: ", payload);
     res.status(200).send();
   } catch (err) {
     console.error("Erro ao processar webhook:", err);

@@ -16,7 +16,6 @@ async function consumerStart(res) {
         // console.log("Body_consumer: ", body);
         try {
           const result = await processarPayload({ body }, res);
-          console.log("Mensagem processada pelo consumer:", result);
           channel.ack(msg);
         } catch (err) {
           console.error("Erro ao processar mensagem:", err.message);

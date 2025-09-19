@@ -95,6 +95,9 @@ async function processarPayload(req, res) {
       );
       mlStatus = shippingResp.data?.status;
       expectedDate = shippingResp.data?.expected_date;
+    } else {
+      mlStatus = null;
+      console.log("Nenhum shippingId encontrado para o pedido:", idPedido);
     }
 
     if (!expectedDate) {
@@ -102,10 +105,10 @@ async function processarPayload(req, res) {
       channel.sendToQueue(RETRY_QUEUE, Buffer.from(JSON.stringify(body)), {
         persistent: true,
       });
-      console.log("Pedido sem expectedDate enviado para fila retry:", body);
-      return res.status(202).json({
-        message: "Pedido enviado para fila de retry por falta de expectedDate",
-      });
+      console.log(
+        `Reenviando pedido ${JSON.stringify(body)} para fila de retry.`
+      );
+      return;
     }
 
     // Montar pedido
@@ -118,6 +121,8 @@ async function processarPayload(req, res) {
       expected_date: expectedDate,
       updated_at: new Date().toISOString(),
     };
+
+    console.log(pedido);
 
     // Salvar ou atualizar de forma segura
     await salvarOuAtualizarPedido(pedido);

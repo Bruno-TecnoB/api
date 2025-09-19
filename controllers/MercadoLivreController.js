@@ -94,7 +94,7 @@ async function processarPayload(req, res) {
         { headers: { Authorization: `Bearer ${process.env.TOKEN_ML}` } }
       );
       mlStatus = shippingResp.data?.status;
-      //expectedDate = shippingResp.data?.expected_date;
+      expectedDate = shippingResp.data?.expected_date;
     } else {
       mlStatus = null;
       console.log("Nenhum shippingId encontrado para o pedido:", idPedido);

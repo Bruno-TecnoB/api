@@ -31,10 +31,11 @@ app.post("/", async (req, res) => {
       return res.status(500).send("Canal RabbitMQ não inicializado.");
 
     const payload = req.body;
+    payload.tentativas = 1;
     channel.sendToQueue(QUEUE_NAME, Buffer.from(JSON.stringify(payload)), {
       persistent: true,
     });
-    console.log("Payload: ", payload);
+    // console.log("Payload: ", payload);
     res.status(200).send();
   } catch (err) {
     console.error("Erro ao processar webhook:", err);

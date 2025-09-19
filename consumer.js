@@ -1,6 +1,20 @@
 const { connectRabbitMQ } = require("./rabbitmq");
 const { QUEUE_NAME, RETRY_QUEUE } = require("./rabbitmq");
 const { processarPayload } = require("./controllers/MercadoLivreController");
+const fs = require("fs");
+const path = require("path");
+
+const ERROR_FILE = path.join(__dirname, "payloads_erro.json");
+const MAX_ATTEMPTS = 3;
+
+function saveErrorPayload(payload) {
+  let errors = [];
+  if (fs.existsSync(ERROR_FILE)) {
+    errors = JSON.parse(fs.readFileSync(ERROR_FILE, "utf8"));
+  }
+  errors.push(payload);
+  fs.writeFileSync(ERROR_FILE, JSON.stringify(errors, null, 2));
+}
 
 async function consumerStart(res) {
   try {
@@ -13,17 +27,26 @@ async function consumerStart(res) {
         if (!msg) return;
 
         const body = JSON.parse(msg.content.toString());
-        // console.log("Body_consumer: ", body);
+        console.log(body);
+        const headers = msg.properties.headers || {};
+        let tentativas = body.tentativas;
+        tentativas = tentativas + 1;
+        body.tentativas = tentativas;
+
+        if (body.tentativas > MAX_ATTEMPTS) {
+          console.log(
+            "Máximo de tentativas alcançado. Salvando payload de erro."
+          );
+          saveErrorPayload(body);
+          channel.ack(msg);
+          return;
+        }
+
         try {
-          const result = await processarPayload({ body }, res);
+          await processarPayload({ body }, res);
           channel.ack(msg);
         } catch (err) {
-          console.error("Erro ao processar mensagem:", err.message);
-          channel.nack(msg, false, false);
-
-          await channel.sendToQueue(RETRY_QUEUE, msg.content, {
-            persistent: true,
-          });
+          console.error(`Erro ao processar mensagem: ${err.message}`);
         }
       },
       { noAck: false }

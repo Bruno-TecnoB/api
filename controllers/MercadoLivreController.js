@@ -94,7 +94,7 @@ async function processarPayload(req, res) {
         { headers: { Authorization: `Bearer ${process.env.TOKEN_ML}` } }
       );
       mlStatus = shippingResp.data?.status;
-      expectedDate = shippingResp.data?.expected_date;
+      //expectedDate = shippingResp.data?.expected_date;
     } else {
       mlStatus = null;
       console.log("Nenhum shippingId encontrado para o pedido:", idPedido);
@@ -105,9 +105,7 @@ async function processarPayload(req, res) {
       channel.sendToQueue(RETRY_QUEUE, Buffer.from(JSON.stringify(body)), {
         persistent: true,
       });
-      console.log(
-        `Reenviando pedido ${JSON.stringify(body)} para fila de retry.`
-      );
+      console.log(`Reenviando pedido para fila de retry.`);
       return;
     }
 

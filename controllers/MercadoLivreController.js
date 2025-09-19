@@ -10,7 +10,7 @@ const arquivoPath = path.join(__dirname, "../json/pedidos.json");
 // Função principal para processar payload
 async function processarPayload(req, res) {
   const body = req.body;
-  console.log("Body_ProcessarPayload:", body);
+  //console.log("Body_ProcessarPayload:", body);
   const numeroPedido = body?.dados?.id;
   const plataforma = (body?.dados?.nomeEcommerce || "").trim().toLowerCase();
   let order_id = body?.dados?.idPedidoEcommerce;

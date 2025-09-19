@@ -159,6 +159,13 @@ async function carregarPedidos() {
     return JSON.parse(conteudo);
   } catch (err) {
     if (err.code === "ENOENT") return []; // Arquivo não existe
+    if (err instanceof SyntaxError) {
+      // Renomeia arquivo corrompido para análise posterior
+      const backupPath = arquivoPath + ".corrompido_" + Date.now();
+      await fs.rename(arquivoPath, backupPath);
+      console.error(`Arquivo JSON corrompido renomeado para: ${backupPath}`);
+      return [];
+    }
     console.error("Erro ao ler o arquivo:", err);
     return [];
   }

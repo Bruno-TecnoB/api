@@ -1,7 +1,7 @@
 const amqp = require("amqplib");
 const QUEUE_NAME = "main_queue";
 const RETRY_QUEUE = "retry_queue";
-const RABBITMQ_URL = "amqp://guest:guest@localhost:5672";
+const RABBITMQ_URL = "amqp://bruno:123@localhost:5672";
 const RETRY_TTL = 20000;
 
 let channel;

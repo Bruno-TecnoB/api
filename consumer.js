@@ -56,4 +56,4 @@ async function consumerStart(res) {
   }
 }
 
-consumerStart();
+module.exports = { consumerStart };

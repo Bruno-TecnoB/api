@@ -43,4 +43,4 @@ app.post("/", async (req, res) => {
   }
 });
 
-module.exports = { app };
+const { consumerStart } = require("./consumer");

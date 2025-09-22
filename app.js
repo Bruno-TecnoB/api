@@ -27,6 +27,10 @@ app.use(bodyParser.json());
   }
 })();
 
+app.get("/webhook/ML", (req, res) => {
+  res.send("Webhook ML funcionando!");
+});
+
 // Endpoint que recebe webhook
 app.post("/webhook/ML", async (req, res) => {
   if (!req.body) {

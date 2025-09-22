@@ -18,16 +18,16 @@ async function processarPayload(req, res) {
   let order_id = body?.dados?.idPedidoEcommerce;
   const codigoSituacao = (body?.dados?.codigoSituacao || "").toLowerCase();
 
-  if (!order_id) {
-    console.log({ error: "Nenhum pedido encontrado." });
-    return;
-  }
-
   if (plataforma !== "mercado livre") {
     return;
   }
 
   if (FormaEnvio == "MercadoEnvios Flex") {
+    return;
+  }
+
+  if (!order_id) {
+    console.log({ error: "Nenhum pedido encontrado." });
     return;
   }
 

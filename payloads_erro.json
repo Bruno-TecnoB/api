@@ -23,55 +23,5 @@
       }
     },
     "tentativas": 4
-  },
-  {
-    "versao": "1.0.1",
-    "cnpj": "37677337000490",
-    "tipo": "atualizacao_pedido",
-    "dados": {
-      "id": "1038461290",
-      "numero": "239665",
-      "data": "15/09/2025",
-      "idPedidoEcommerce": "2000013102495360",
-      "codigoSituacao": "aprovado",
-      "descricaoSituacao": "aberto",
-      "idContato": "951726964",
-      "idNotaFiscal": "979548377",
-      "nomeEcommerce": "Mercado Livre",
-      "cliente": {
-        "nome": "Katiacristinajulinha Katiacristinajulinha",
-        "cpfCnpj": "261.808.118-81"
-      },
-      "formaEnvio": {
-        "id": "697564368",
-        "descricao": "Mercado Envios"
-      }
-    },
-    "tentativas": 4
-  },
-  {
-    "versao": "1.0.1",
-    "cnpj": "37677337000490",
-    "tipo": "atualizacao_pedido",
-    "dados": {
-      "id": "1038461290",
-      "numero": "239665",
-      "data": "15/09/2025",
-      "idPedidoEcommerce": "2000013102495360",
-      "codigoSituacao": "aprovado",
-      "descricaoSituacao": "aberto",
-      "idContato": "951726964",
-      "idNotaFiscal": "979548377",
-      "nomeEcommerce": "Mercado Livre",
-      "cliente": {
-        "nome": "Katiacristinajulinha Katiacristinajulinha",
-        "cpfCnpj": "261.808.118-81"
-      },
-      "formaEnvio": {
-        "id": "697564368",
-        "descricao": "Mercado Envios"
-      }
-    },
-    "tentativas": 4
   }
 ]

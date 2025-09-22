@@ -26,7 +26,7 @@ app.use(bodyParser.json());
 })();
 console.log("Aguardando mensagens na fila");
 // Endpoint que recebe webhook
-app.post("/webhook/ML", async (req, res) => {
+app.post("/ML", async (req, res) => {
   if (!req.body) {
     console.log("o Payload veio Vazio no APP.js");
     return res.status(200).send();

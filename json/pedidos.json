@@ -7,14 +7,5 @@
     "status_ml": "on_time",
     "expected_date": "2025-09-19T23:59:59-03:00",
     "updated_at": "2025-09-19T14:52:54.061Z"
-  },
-  {
-    "order_id": "2000009306552263",
-    "id_tiny": "1038530715",
-    "plataforma": "Mercado Livre",
-    "status": "pronto para envio",
-    "status_da_api": "No Prazo",
-    "data_Maxima_de_Despacho": "2025-09-23T23:59:59-03:00",
-    "data_criacao": "2025-09-22T18:11:21.588Z"
   }
 ]

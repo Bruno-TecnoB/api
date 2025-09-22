@@ -55,5 +55,5 @@ async function consumerStart(res) {
     console.error("Erro no consumer:", err);
   }
 }
+
 consumerStart();
-module.exports = { consumerStart };

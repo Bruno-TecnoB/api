@@ -27,8 +27,6 @@ async function consumerStart(res) {
         if (!msg) return;
 
         const body = JSON.parse(msg.content.toString());
-        console.log(body);
-        const headers = msg.properties.headers || {};
         let tentativas = body.tentativas;
         tentativas = tentativas + 1;
         body.tentativas = tentativas;
@@ -43,7 +41,7 @@ async function consumerStart(res) {
         }
 
         try {
-          await processarPayload(msg, res);
+          await processarPayload({ body }, res);
           channel.ack(msg);
         } catch (err) {
           console.error(`Erro ao processar mensagem: ${err.message}`);
@@ -57,3 +55,5 @@ async function consumerStart(res) {
 }
 
 consumerStart();
+
+module.exports = { consumerStart };

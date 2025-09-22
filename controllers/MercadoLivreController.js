@@ -9,6 +9,7 @@ const arquivoPath = path.join(__dirname, "../json/pedidos.json");
 
 async function processarPayload(req, res) {
   const body = req.body;
+  console.log("Body: ", body);
   const numeroPedido = body?.dados?.id;
   const plataforma = (body?.dados?.nomeEcommerce || "").trim().toLowerCase();
   const FormaEnvio = (body?.dados?.formaEnvio.descricao || "")
@@ -135,7 +136,7 @@ async function processarPayload(req, res) {
     console.log("Pedido: ", pedido);
     await salvarOuAtualizarPedido(pedido);
 
-    return;
+    return pedido;
   } catch (err) {
     console.error(
       "Erro em processarPayload:",

@@ -32,5 +32,6 @@ module.exports = {
   RETRY_QUEUE,
   RABBITMQ_URL,
   RETRY_TTL,
+  channel,
   connectRabbitMQ,
 };

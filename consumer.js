@@ -19,7 +19,7 @@ function saveErrorPayload(payload) {
 async function consumerStart(res) {
   try {
     const channel = await connectRabbitMQ();
-    console.log("Aguardando mensagens na fila:", QUEUE_NAME);
+    // console.log("Aguardando mensagens na fila:", QUEUE_NAME);
 
     channel.consume(
       QUEUE_NAME,

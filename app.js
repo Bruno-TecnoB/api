@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 require("dotenv").config({ quiet: true });
-let { connectRabbitMQ, QUEUE_NAME, channel } = require("./rabbitmq");
+const { connectRabbitMQ, QUEUE_NAME } = require("./rabbitmq");
 const EnviosColeta = require("./routes/ColetaRouter");
 const sequelize = require("./db/conn");
 
@@ -18,29 +18,23 @@ app.use(bodyParser.json());
     // Inicializa servidor só depois de conectar RabbitMQ
     await sequelize.sync();
     app.listen(process.env.PORT || 5000, () => {
-      //console.log("Servidor rodando na porta 5000");
+      // console.log("Servidor rodando na porta 5000");
     });
   } catch (err) {
     console.error("Erro ao inicializar RabbitMQ:", err);
   }
 })();
-console.log("Aguardando mensagens na fila");
 
 // Endpoint que recebe webhook
-app.post("/ML", async (req, res) => {
+app.post("/", async (req, res) => {
   if (!req.body) {
     console.log("o Payload veio Vazio no APP.js");
     return res.status(200).send();
   }
 
   try {
-    if (!channel) {
-      console.warn("RabbitMQ não conectado, enviando fallback");
-      return res.status(200).send({
-        message: "Recebido, mas RabbitMQ não pronto",
-        payload: req.body,
-      });
-    }
+    if (!channel)
+      return res.status(500).send("Canal RabbitMQ não inicializado.");
 
     const payload = req.body;
 

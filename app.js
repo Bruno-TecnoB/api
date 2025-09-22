@@ -17,8 +17,10 @@ app.use(bodyParser.json());
 
     // Inicializa servidor só depois de conectar RabbitMQ
     await sequelize.sync();
-    app.listen(process.env.PORT || 5000, () => {
-      // console.log("Servidor rodando na porta 5000");
+
+    const PORT = process.env.PORT || 5000;
+    app.listen(PORT, "0.0.0.0", () => {
+      console.log(`Servidor rodando na porta ${PORT}`);
     });
   } catch (err) {
     console.error("Erro ao inicializar RabbitMQ:", err);

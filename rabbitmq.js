@@ -1,7 +1,7 @@
 const amqp = require("amqplib");
 const QUEUE_NAME = "main_queue";
 const RETRY_QUEUE = "retry_queue";
-const RABBITMQ_URL = "amqp://bruno:123@localhost:5672";
+const RABBITMQ_URL = "amqp://guest:guest@localhost:5672";
 const RETRY_TTL = 20000;
 
 let channel;
@@ -12,10 +12,8 @@ async function connectRabbitMQ() {
   const connection = await amqp.connect(RABBITMQ_URL);
   channel = await connection.createChannel();
 
-  // Fila principal
   await channel.assertQueue(QUEUE_NAME, { durable: true });
 
-  // Fila de retry
   await channel.assertQueue(RETRY_QUEUE, {
     durable: true,
     arguments: {
@@ -25,7 +23,7 @@ async function connectRabbitMQ() {
     },
   });
 
-  console.log("RabbitMQ conectado nas filas:", QUEUE_NAME, RETRY_QUEUE);
+  // console.log("RabbitMQ conectado nas filas:", QUEUE_NAME, RETRY_QUEUE);
   return channel;
 }
 

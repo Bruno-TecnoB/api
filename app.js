@@ -25,6 +25,7 @@ app.use(bodyParser.json());
   }
 })();
 console.log("Aguardando mensagens na fila");
+
 // Endpoint que recebe webhook
 app.post("/ML", async (req, res) => {
   if (!req.body) {
@@ -33,8 +34,13 @@ app.post("/ML", async (req, res) => {
   }
 
   try {
-    if (!channel)
-      return res.status(500).send("Canal RabbitMQ não inicializado.");
+    if (!channel) {
+      console.warn("RabbitMQ não conectado, enviando fallback");
+      return res.status(200).send({
+        message: "Recebido, mas RabbitMQ não pronto",
+        payload: req.body,
+      });
+    }
 
     const payload = req.body;
 

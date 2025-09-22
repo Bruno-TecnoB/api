@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 require("dotenv").config({ quiet: true });
-const { connectRabbitMQ, QUEUE_NAME, channel } = require("./rabbitmq");
+let { connectRabbitMQ, QUEUE_NAME, channel } = require("./rabbitmq");
 const EnviosColeta = require("./routes/ColetaRouter");
 const sequelize = require("./db/conn");
 

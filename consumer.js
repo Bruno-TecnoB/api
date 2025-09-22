@@ -43,7 +43,7 @@ async function consumerStart(res) {
         }
 
         try {
-          await processarPayload({ body }, res);
+          await processarPayload(msg, res);
           channel.ack(msg);
         } catch (err) {
           console.error(`Erro ao processar mensagem: ${err.message}`);

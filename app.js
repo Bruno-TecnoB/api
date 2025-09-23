@@ -33,7 +33,7 @@ app.post("/", async (req, res) => {
     const payload = req.body;
 
     if (!payload || Object.keys(payload).length === 0) {
-      console.warn("Webhook recebido vazio!");
+      console.warn("Webhook recebido vazio");
       return res.status(400).send("Payload vazio");
     }
 

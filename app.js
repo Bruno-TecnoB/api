@@ -31,7 +31,13 @@ app.post("/", async (req, res) => {
       return res.status(500).send("Canal RabbitMQ não inicializado.");
 
     const payload = req.body;
-    payload.tentativas = 1;
+
+    if (!payload || Object.keys(payload).length === 0) {
+      console.warn("Webhook recebido vazio!");
+      return res.status(400).send("Payload vazio");
+    }
+
+    payload.tentativas = 0;
     channel.sendToQueue(QUEUE_NAME, Buffer.from(JSON.stringify(payload)), {
       persistent: true,
     });

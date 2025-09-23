@@ -25,6 +25,8 @@ app.use(bodyParser.json());
 })();
 
 // Endpoint que recebe webhook
+app.get("/", (req, res) => res.status(200).send("OK"));
+app.head("/", (req, res) => res.status(200).end());
 app.post("/", async (req, res) => {
   try {
     if (!channel)
@@ -33,8 +35,8 @@ app.post("/", async (req, res) => {
     const payload = req.body;
 
     if (!payload || Object.keys(payload).length === 0) {
-      console.warn("Webhook de Teste recebido");
-      return res.status(200).send("Payload vazio");
+      console.log("Webhook de Teste recebido");
+      return res.status(200).send("OK");
     }
 
     payload.tentativas = 0;

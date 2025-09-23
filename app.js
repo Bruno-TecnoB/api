@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 })();
 
 // Endpoint que recebe webhooks
-app.post("/tiny1", async (req, res) => {
+app.post("/", async (req, res) => {
   try {
     if (!channel)
       return res.status(500).send("Canal RabbitMQ não inicializado.");

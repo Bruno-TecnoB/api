@@ -25,9 +25,10 @@ async function connectRabbitMQ() {
     },
   });
 
-  console.log("RabbitMQ conectado nas filas:", QUEUE_NAME, RETRY_QUEUE);
   return channel;
 }
+
+console.log("RabbitMQ conectado nas filas:", QUEUE_NAME, RETRY_QUEUE);
 
 module.exports = {
   QUEUE_NAME,

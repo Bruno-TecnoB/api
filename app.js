@@ -34,7 +34,7 @@ app.post("/", async (req, res) => {
 
     if (!payload || Object.keys(payload).length === 0) {
       console.log("Webhook de Teste recebido");
-      return res.status(200).send("OK");
+      return res.sendStatus(200);
     }
 
     payload.tentativas = 0;

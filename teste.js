@@ -24,13 +24,14 @@ async function getOrderDetail() {
     const response = await axios.get(url, {
       headers: { "Content-Type": "application/json" },
       params: {
-        order_sn_list: "250822GQQX11QD",
+        order_sn_list: "2509239K784Q42",
         response_optional_fields: "buyer_user_id,recipient_address",
       },
     });
 
     let data_despacho = response.data.response.order_list[0];
     const DataParaEnvio = data_despacho.days_to_ship;
+    const order_status = data_despacho.order_status;
     const dataMaximaDespacho = new Date(
       data_despacho.ship_by_date * 1000
     ).toLocaleString();

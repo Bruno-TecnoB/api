@@ -4,11 +4,9 @@ const fs = require("fs").promises;
 const path = require("path");
 const { connectRabbitMQ } = require("../rabbitmq");
 const { RETRY_QUEUE } = require("../rabbitmq");
-const { concluirIntegracaoShopee } = require("./ShopeeController");
 require("dotenv").config({ quiet: true });
 
-async function DataDespachoShopee(order_id, numeroPedido, situacaoDefinida) {
-  console.log("order_id: ", order_id);
+async function DataDespachoShopee(order_id, numeroPedido, body) {
   const partner_id = process.env.partner_id;
   const partner_key = process.env.partner_key;
   const shop_id = process.env.shop_id;
@@ -38,19 +36,34 @@ async function DataDespachoShopee(order_id, numeroPedido, situacaoDefinida) {
     let data_despacho = response.data.response.order_list[0];
     const DataParaEnvio = data_despacho.days_to_ship;
     const order_status = data_despacho.order_status;
+
+    const situacoesMap = {
+      READY_TO_SHIP: "Aguardando Separação",
+      PROCESSED: "Em Separação",
+      PREPARANDO_ENVIO: "Em Separação",
+      FATURADO: "Separados",
+    };
+
+    const status_api = situacoesMap[order_status.toUpperCase()] || order_status;
     const dataMaximaDespacho = new Date(
       data_despacho.ship_by_date * 1000
     ).toLocaleString();
 
-    // console.log(
-    //   `Data Para envio em ${DataParaEnvio} Dias, Data Para Despacho ${dataMaximaDespacho}`
-    // );
+    if (!data_despacho) {
+      const channel = await connectRabbitMQ();
+      channel.sendToQueue(RETRY_QUEUE, Buffer.from(JSON.stringify(body)), {
+        persistent: true,
+      });
+      console.log(`Reenviando pedido para fila de retry.`);
+      return;
+    }
 
     const pedido = {
       order_id: order_id,
       id_tiny: numeroPedido,
+      prazo_envio: DataParaEnvio,
       plataforma: "Shopee",
-      status_da_api: order_status,
+      status_da_api: status_api,
       data_Maxima_de_Despacho: dataMaximaDespacho,
       data_criacao: new Date().toISOString(),
     };
@@ -62,17 +75,15 @@ async function DataDespachoShopee(order_id, numeroPedido, situacaoDefinida) {
   }
 }
 
-async function processarPayload(req, res) {
+async function DataDespachoML(req, res) {
   const body = req.body;
-  console.log("Body: ", body);
   const numeroPedido = body?.dados?.id;
+  const formaEnvio = body?.dados?.formaEnvio?.descricao;
   const plataforma = (body?.dados?.nomeEcommerce || "").trim().toLowerCase();
-  const FormaEnvio = (body?.dados?.formaEnvio.descricao || "")
-    .trim()
-    .toLowerCase();
-
   let order_id = body?.dados?.idPedidoEcommerce;
-  const codigoSituacao = (body?.dados?.codigoSituacao || "").toLowerCase();
+  const codigoSituacao = (body?.dados?.descricaoSituacao || "").toLowerCase();
+
+  console.log(`Marketplace: ${formaEnvio}  ||  ID Pedido: ${order_id}`);
 
   if (!order_id) {
     console.log({ error: "Nenhum pedido encontrado." });
@@ -80,19 +91,12 @@ async function processarPayload(req, res) {
   }
 
   if (plataforma == "shopee") {
-    const DespachoShopee = await DataDespachoShopee(
-      order_id,
-      numeroPedido,
-      codigoSituacao
-    );
+    await DataDespachoShopee(order_id, numeroPedido, codigoSituacao, body);
+    salvarPedido(body);
     return;
   }
 
   if (plataforma !== "mercado livre") {
-    return;
-  }
-
-  if (FormaEnvio == "MercadoEnvios Flex") {
     return;
   }
 
@@ -168,7 +172,6 @@ async function processarPayload(req, res) {
       );
       mlStatus = shippingResp.data?.status;
       expectedDate = shippingResp.data?.expected_date;
-      console.log(shippingResp.data);
     } else {
       mlStatus = null;
       console.log("Nenhum shippingId encontrado para o pedido:", idPedido);
@@ -200,6 +203,7 @@ async function processarPayload(req, res) {
 
     console.log("Pedido: ", pedido);
     await salvarOuAtualizarPedido(pedido);
+    await salvarPedido(body);
 
     return pedido;
   } catch (err) {
@@ -247,4 +251,24 @@ async function carregarPedidos() {
   }
 }
 
-module.exports = { processarPayload, DataDespachoShopee };
+async function salvarPedido(payload) {
+  const arquivoPath = path.join(__dirname, "../json/payload.json");
+
+  // Carrega pedidos existentes (ou vazio se não existir)
+  let dadosExistentes = [];
+  try {
+    const arquivo = await fs.readFile(arquivoPath, "utf-8");
+    dadosExistentes = JSON.parse(arquivo);
+  } catch (err) {
+    // Se o arquivo não existir ou estiver vazio, começa com array vazio
+    dadosExistentes = [];
+  }
+
+  // Sempre adiciona novo pedido
+  dadosExistentes.push(payload);
+
+  // Salva tudo
+  await fs.writeFile(arquivoPath, JSON.stringify(dadosExistentes, null, 2));
+}
+
+module.exports = { DataDespachoML, DataDespachoShopee };

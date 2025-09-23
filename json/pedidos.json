@@ -1,795 +1,3512 @@
 [
   {
-    "order_id": "250923965CMFH1",
-    "id_tiny": "1038545902",
+    "order_id": "250924A8RNFKWD",
+    "id_tiny": "1038565034",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "PROCESSED",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:11:28.472Z"
-  },
-  {
-    "order_id": "2509239H1FKG2R",
-    "id_tiny": "1038551148",
-    "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:11:29.979Z"
-  },
-  {
-    "order_id": "2509225V098T38",
-    "id_tiny": "1038502598",
-    "plataforma": "Shopee",
-    "status_da_api": "PROCESSED",
+    "status_da_api": "Aguardando Separação",
     "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:11:34.044Z"
+    "data_criacao": "2025-09-23T19:02:17.856Z"
   },
   {
-    "order_id": "2509239H9UHTUR",
-    "id_tiny": "1038551374",
+    "order_id": "2000013140827188",
+    "id_tiny": "1038551556",
+    "plataforma": "Mercado Livre",
+    "status": "enviado",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-23T23:00:00-03:00",
+    "data_criacao": "2025-09-23T19:02:26.488Z"
+  },
+  {
+    "order_id": "2508305XQ567XG",
+    "id_tiny": "1037753017",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "COMPLETED",
+    "data_Maxima_de_Despacho": "02/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:03:15.414Z"
+  },
+  {
+    "order_id": "2000009311593269",
+    "id_tiny": "1038538421",
+    "plataforma": "Mercado Livre",
+    "status": "enviado",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-23T23:00:00-03:00",
+    "data_criacao": "2025-09-23T19:03:17.243Z"
+  },
+  {
+    "order_id": "2000013129444110",
+    "id_tiny": "1038521011",
+    "plataforma": "Mercado Livre",
+    "status": "enviado",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-23T23:00:00-03:00",
+    "data_criacao": "2025-09-23T19:03:24.128Z"
+  },
+  {
+    "order_id": "250923850MJMC0",
+    "id_tiny": "1038536709",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:11:45.708Z"
+    "data_criacao": "2025-09-23T19:03:24.817Z"
   },
   {
-    "order_id": "2509214NNQUN8J",
-    "id_tiny": "1038494488",
+    "order_id": "2000013145862060",
+    "id_tiny": "1038565054",
+    "plataforma": "Mercado Livre",
+    "status": "Aguardando Separação",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-24T23:59:59-03:00",
+    "data_criacao": "2025-09-23T19:18:30.522Z"
+  },
+  {
+    "order_id": "25092386XQXF7C",
+    "id_tiny": "1038537119",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:07.602Z"
+    "data_criacao": "2025-09-23T19:03:33.780Z"
   },
   {
-    "order_id": "2509239R34RU7U",
-    "id_tiny": "1038557636",
+    "order_id": "25092384KGVRPY",
+    "id_tiny": "1038536611",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:10.886Z"
+    "data_criacao": "2025-09-23T19:03:34.227Z"
   },
   {
-    "order_id": "2509239R131ECE",
-    "id_tiny": "1038557623",
+    "order_id": "250924A8S1UC9A",
+    "id_tiny": "1038565059",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:11.285Z"
-  },
-  {
-    "order_id": "2509239R300RBX",
-    "id_tiny": "1038557632",
-    "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "Aguardando Separação",
     "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:11.385Z"
+    "data_criacao": "2025-09-23T19:03:35.921Z"
   },
   {
-    "order_id": "2509239QYVT9YQ",
-    "id_tiny": "1038557571",
+    "order_id": "250924A8S0WPP2",
+    "id_tiny": "1038565063",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:11.639Z"
+    "status_da_api": "Aguardando Separação",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:03:49.935Z"
   },
   {
-    "order_id": "2509239QXY87HU",
-    "id_tiny": "1038557564",
+    "order_id": "250916M727NBNS",
+    "id_tiny": "1038345978",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:11.751Z"
+    "status_da_api": "COMPLETED",
+    "data_Maxima_de_Despacho": "16/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:04:00.051Z"
   },
   {
-    "order_id": "2509239R0JTKNT",
-    "id_tiny": "1038557591",
+    "order_id": "2509238167RFAF",
+    "id_tiny": "1038535781",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:11.808Z"
+    "data_criacao": "2025-09-23T19:04:00.546Z"
   },
   {
-    "order_id": "2509239QW445RX",
-    "id_tiny": "1038557554",
+    "order_id": "25092388M9R38C",
+    "id_tiny": "1038537596",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:11.911Z"
+    "data_criacao": "2025-09-23T19:04:01.204Z"
   },
   {
-    "order_id": "2509239QVNSXDX",
-    "id_tiny": "1038557531",
-    "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:12.069Z"
+    "order_id": "2000009320101873",
+    "id_tiny": "1038565065",
+    "plataforma": "Mercado Livre",
+    "status": "Aguardando Separação",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-24T23:59:59-03:00",
+    "data_criacao": "2025-09-23T19:04:04.434Z"
   },
   {
-    "order_id": "2509239KTPV3RB",
-    "id_tiny": "1038553047",
+    "order_id": "25092380G7XNCD",
+    "id_tiny": "1038535620",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:21.018Z"
+    "data_criacao": "2025-09-23T19:04:33.002Z"
   },
   {
-    "order_id": "2509239QUJJ47N",
-    "id_tiny": "1038557488",
+    "order_id": "250923886BD4VD",
+    "id_tiny": "1038537438",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:12.253Z"
+    "data_criacao": "2025-09-23T19:04:34.272Z"
   },
   {
-    "order_id": "2509239QU6622V",
-    "id_tiny": "1038557483",
+    "order_id": "2509238MVQP1DE",
+    "id_tiny": "1038540580",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:12.513Z"
+    "data_criacao": "2025-09-23T19:04:39.620Z"
   },
   {
-    "order_id": "2509239QSHPU4J",
-    "id_tiny": "1038557481",
+    "order_id": "2509239NJ1TG5X",
+    "id_tiny": "1038554264",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:12.610Z"
+    "data_criacao": "2025-09-23T19:04:43.545Z"
   },
   {
-    "order_id": "2509239QMKDT0B",
-    "id_tiny": "1038557400",
+    "order_id": "2509214FFQMSPP",
+    "id_tiny": "1038492989",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:12.786Z"
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:04:44.866Z"
   },
   {
-    "order_id": "2509239QGYY966",
-    "id_tiny": "1038557347",
+    "order_id": "250924A8SSNQFB",
+    "id_tiny": "1038565073",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:12.934Z"
+    "status_da_api": "Aguardando Separação",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:04:47.253Z"
   },
   {
-    "order_id": "2509239QGU7WJG",
-    "id_tiny": "1038557341",
+    "order_id": "250924A8TFNB84",
+    "id_tiny": "1038565077",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:13.094Z"
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:05:01.327Z"
   },
   {
-    "order_id": "2509239QGC0M1P",
-    "id_tiny": "1038557327",
+    "order_id": "2509239HBRJMUJ",
+    "id_tiny": "1038551378",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:13.276Z"
+    "data_criacao": "2025-09-23T19:05:11.094Z"
   },
   {
-    "order_id": "2509239QFSUFRW",
-    "id_tiny": "1038557225",
+    "order_id": "2509214BCCRHWV",
+    "id_tiny": "1038492643",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:13.381Z"
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:05:12.073Z"
   },
   {
-    "order_id": "2509239QFQ1C5J",
-    "id_tiny": "1038557222",
+    "order_id": "25092383KERYTP",
+    "id_tiny": "1038536390",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:13.638Z"
+    "data_criacao": "2025-09-23T19:05:12.866Z"
   },
   {
-    "order_id": "2509239QF4WHKG",
-    "id_tiny": "1038557218",
+    "order_id": "2509239MGSHD7P",
+    "id_tiny": "1038553460",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:13.772Z"
+    "data_criacao": "2025-09-23T19:05:14.021Z"
   },
   {
-    "order_id": "2509239QEMPY7D",
-    "id_tiny": "1038557180",
+    "order_id": "25092382TN9W9A",
+    "id_tiny": "1038536231",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:13.920Z"
+    "data_criacao": "2025-09-23T19:05:16.517Z"
   },
   {
-    "order_id": "2509239QCRM6GY",
-    "id_tiny": "1038557160",
+    "order_id": "25092386F55JVK",
+    "id_tiny": "1038537013",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:14.127Z"
+    "data_criacao": "2025-09-23T19:05:19.077Z"
   },
   {
-    "order_id": "2509239QC6GJU9",
-    "id_tiny": "1038557158",
+    "order_id": "25092388UDM5C3",
+    "id_tiny": "1038537646",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:14.252Z"
+    "data_criacao": "2025-09-23T19:05:20.302Z"
   },
   {
-    "order_id": "2509239PTMSE74",
-    "id_tiny": "1038556638",
+    "order_id": "25092383J2VKCP",
+    "id_tiny": "1038536375",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:14.371Z"
+    "data_criacao": "2025-09-23T19:05:21.105Z"
   },
   {
-    "order_id": "2509239Q9CSXS8",
-    "id_tiny": "1038557152",
+    "order_id": "2509238826TXX4",
+    "id_tiny": "1038537397",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:14.560Z"
+    "data_criacao": "2025-09-23T19:05:22.320Z"
   },
   {
-    "order_id": "2509239Q8TNKF7",
-    "id_tiny": "1038557141",
+    "order_id": "250913BS4N8U0J",
+    "id_tiny": "1038271963",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:14.689Z"
+    "status_da_api": "COMPLETED",
+    "data_Maxima_de_Despacho": "15/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:05:25.898Z"
   },
   {
-    "order_id": "2509239Q71FHW9",
-    "id_tiny": "1038557116",
+    "order_id": "250924A8U2Q15V",
+    "id_tiny": "1038565078",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:14.891Z"
+    "status_da_api": "Aguardando Separação",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:05:29.716Z"
   },
   {
-    "order_id": "2509239Q6QY7Y7",
-    "id_tiny": "1038557109",
+    "order_id": "25092384NFTGPW",
+    "id_tiny": "1038536636",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:15.046Z"
+    "data_criacao": "2025-09-23T19:05:38.948Z"
   },
   {
-    "order_id": "2509239Q5QG70D",
-    "id_tiny": "1038557106",
+    "order_id": "25092385F05AXR",
+    "id_tiny": "1038536786",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:15.209Z"
+    "data_criacao": "2025-09-23T19:05:41.364Z"
   },
   {
-    "order_id": "2509239Q5KNDWE",
-    "id_tiny": "1038557104",
+    "order_id": "250923875MA5P5",
+    "id_tiny": "1038537171",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:15.385Z"
+    "data_criacao": "2025-09-23T19:05:42.335Z"
   },
   {
-    "order_id": "2509239Q441WSC",
-    "id_tiny": "1038557088",
+    "order_id": "2509239FSGN99F",
+    "id_tiny": "1038550117",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:15.582Z"
+    "data_criacao": "2025-09-23T19:05:43.575Z"
   },
   {
-    "order_id": "2509239Q3G0ASG",
-    "id_tiny": "1038557073",
+    "order_id": "25092381WPC7H7",
+    "id_tiny": "1038535916",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:15.760Z"
+    "data_criacao": "2025-09-23T19:05:44.845Z"
   },
   {
-    "order_id": "2509239Q27XWT7",
-    "id_tiny": "1038557048",
+    "order_id": "250917NQM92TM3",
+    "id_tiny": "1038372383",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:15.918Z"
+    "status_da_api": "COMPLETED",
+    "data_Maxima_de_Despacho": "17/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:05:46.618Z"
   },
   {
-    "order_id": "2509239Q1SMEFF",
-    "id_tiny": "1038557038",
+    "order_id": "2509239MVBKRN0",
+    "id_tiny": "1038553656",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:16.082Z"
+    "data_criacao": "2025-09-23T19:05:47.497Z"
   },
   {
-    "order_id": "2509239Q14M6QR",
-    "id_tiny": "1038557030",
+    "order_id": "2509106B90JTEJ",
+    "id_tiny": "1038190270",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:16.264Z"
+    "status_da_api": "COMPLETED",
+    "data_Maxima_de_Despacho": "11/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:05:48.574Z"
   },
   {
-    "order_id": "2509239Q0HJ7PW",
-    "id_tiny": "1038557027",
+    "order_id": "250923858QW0NB",
+    "id_tiny": "1038536760",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:16.521Z"
+    "data_criacao": "2025-09-23T19:05:51.981Z"
   },
   {
-    "order_id": "2509239Q0GKPVQ",
-    "id_tiny": "1038557018",
+    "order_id": "25092388N3GUC9",
+    "id_tiny": "1038537609",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:16.679Z"
+    "data_criacao": "2025-09-23T19:05:52.810Z"
   },
   {
-    "order_id": "2509239PXFRB3G",
-    "id_tiny": "1038556818",
+    "order_id": "250919VAFRJ0W8",
+    "id_tiny": "1038444827",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:16.800Z"
+    "status_da_api": "COMPLETED",
+    "data_Maxima_de_Despacho": "19/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:05:54.039Z"
   },
   {
-    "order_id": "2509239PVC14PD",
-    "id_tiny": "1038556767",
+    "order_id": "25092381G0MEQ1",
+    "id_tiny": "1038535834",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:17.010Z"
+    "data_criacao": "2025-09-23T19:05:56.181Z"
   },
   {
-    "order_id": "2509239PU13UUM",
-    "id_tiny": "1038556674",
+    "order_id": "2509239K6N12CW",
+    "id_tiny": "1038552482",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:17.183Z"
+    "data_criacao": "2025-09-23T19:05:58.109Z"
   },
   {
-    "order_id": "2509239PHB6K5M",
-    "id_tiny": "1038555659",
+    "order_id": "25092381DYRQQJ",
+    "id_tiny": "1038535814",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:17.399Z"
+    "data_criacao": "2025-09-23T19:05:59.190Z"
   },
   {
-    "order_id": "2509239PNW3XPN",
-    "id_tiny": "1038556093",
+    "order_id": "25092386T55GPH",
+    "id_tiny": "1038537084",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:17.522Z"
+    "data_criacao": "2025-09-23T19:06:01.155Z"
   },
   {
-    "order_id": "2509239PNJNR9Q",
-    "id_tiny": "1038556059",
+    "order_id": "250923833Q6A69",
+    "id_tiny": "1038536277",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:17.729Z"
+    "data_criacao": "2025-09-23T19:06:02.127Z"
   },
   {
-    "order_id": "2509239PN76P5R",
-    "id_tiny": "1038556034",
+    "order_id": "25092381AXFFYM",
+    "id_tiny": "1038535800",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:18.032Z"
+    "data_criacao": "2025-09-23T19:06:04.320Z"
+  },
+  {
+    "order_id": "250923866JJ8FB",
+    "id_tiny": "1038536960",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:06:07.526Z"
+  },
+  {
+    "order_id": "2509214KNA09AY",
+    "id_tiny": "1038493734",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:06:08.753Z"
+  },
+  {
+    "order_id": "2000013145874374",
+    "id_tiny": "1038565082",
+    "plataforma": "Mercado Livre",
+    "status": "em aberto",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-24T23:59:59-03:00",
+    "data_criacao": "2025-09-23T19:06:10.882Z"
+  },
+  {
+    "order_id": "2000009314607027",
+    "id_tiny": "1038548829",
+    "plataforma": "Mercado Livre",
+    "status": "enviado",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-23T23:00:00-03:00",
+    "data_criacao": "2025-09-23T19:06:21.795Z"
+  },
+  {
+    "order_id": "2509239H75R2MT",
+    "id_tiny": "1038551355",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:06:24.338Z"
+  },
+  {
+    "order_id": "25092385KF8BSF",
+    "id_tiny": "1038536843",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:06:25.013Z"
+  },
+  {
+    "order_id": "25092380Y11HD1",
+    "id_tiny": "1038535707",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:06:26.060Z"
+  },
+  {
+    "order_id": "2509239N0UKREY",
+    "id_tiny": "1038553730",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:06:28.844Z"
+  },
+  {
+    "order_id": "2000013142781154",
+    "id_tiny": "1038559390",
+    "plataforma": "Mercado Livre",
+    "status": "enviado",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-23T23:00:00-03:00",
+    "data_criacao": "2025-09-23T19:06:31.382Z"
+  },
+  {
+    "order_id": "2509238825US76",
+    "id_tiny": "1038537400",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:06:39.727Z"
+  },
+  {
+    "order_id": "2509214AJG1N8E",
+    "id_tiny": "1038492585",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:06:40.295Z"
+  },
+  {
+    "order_id": "25092381S96GUS",
+    "id_tiny": "1038535895",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:06:41.258Z"
+  },
+  {
+    "order_id": "25092382SVHHJW",
+    "id_tiny": "1038536218",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:06:42.965Z"
+  },
+  {
+    "order_id": "2509239H7F9UP3",
+    "id_tiny": "1038551359",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:06:43.764Z"
+  },
+  {
+    "order_id": "2509214QDYBH8V",
+    "id_tiny": "1038494872",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:06:46.666Z"
+  },
+  {
+    "order_id": "25092381MS4YJ2",
+    "id_tiny": "1038535868",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:06:47.500Z"
+  },
+  {
+    "order_id": "25091177DNG9KX",
+    "id_tiny": "1038206397",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "COMPLETED",
+    "data_Maxima_de_Despacho": "11/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:06:48.484Z"
+  },
+  {
+    "order_id": "250924A8XK8PSH",
+    "id_tiny": "1038565109",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "Aguardando Separação",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:06:50.209Z"
+  },
+  {
+    "order_id": "25092277PA38BM",
+    "id_tiny": "1038520013",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:07:05.566Z"
+  },
+  {
+    "order_id": "250905PSA6G6R5",
+    "id_tiny": "1037971145",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "COMPLETED",
+    "data_Maxima_de_Despacho": "08/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:07:06.770Z"
+  },
+  {
+    "order_id": "2509104FX0CHXP",
+    "id_tiny": "1038149945",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "COMPLETED",
+    "data_Maxima_de_Despacho": "12/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:07:08.265Z"
+  },
+  {
+    "order_id": "25092388VQKDC8",
+    "id_tiny": "1038537664",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:07:09.793Z"
+  },
+  {
+    "order_id": "2509238J2PQ34V",
+    "id_tiny": "1038539788",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:07:10.562Z"
+  },
+  {
+    "order_id": "25092382J6FRQ0",
+    "id_tiny": "1038536156",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:07:13.024Z"
+  },
+  {
+    "order_id": "2509214M5Y2ADY",
+    "id_tiny": "1038494051",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:07:13.870Z"
   },
   {
     "order_id": "2509239PMK60QU",
     "id_tiny": "1038556013",
-    "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:18.183Z"
-  },
-  {
-    "order_id": "2509239P7JCYWN",
-    "id_tiny": "1038554890",
-    "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:18.344Z"
-  },
-  {
-    "order_id": "2509239NPE0A15",
-    "id_tiny": "1038554464",
-    "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:18.459Z"
-  },
-  {
-    "order_id": "2509239NNM8THV",
-    "id_tiny": "1038554437",
-    "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:18.656Z"
-  },
-  {
-    "order_id": "2509239NGDD6UM",
-    "id_tiny": "1038554198",
-    "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:18.829Z"
-  },
-  {
-    "order_id": "2509239MAK6GTB",
-    "id_tiny": "1038553351",
-    "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:19.049Z"
-  },
-  {
-    "order_id": "2509239RCMYYFH",
-    "id_tiny": "1038557905",
-    "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:24.296Z"
-  },
-  {
-    "order_id": "2509239KU658SN",
-    "id_tiny": "1038553068",
-    "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:34.957Z"
-  },
-  {
-    "order_id": "2509238GTYD7C0",
-    "id_tiny": "1038539598",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
     "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:26.670Z"
+    "data_criacao": "2025-09-23T19:07:15.260Z"
   },
   {
-    "order_id": "2509238B9H8662",
-    "id_tiny": "1038538382",
+    "order_id": "2509238098T1NB",
+    "id_tiny": "1038535569",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
     "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:27.844Z"
+    "data_criacao": "2025-09-23T19:07:16.001Z"
   },
   {
-    "order_id": "250906R6RFUN16",
-    "id_tiny": "1037992931",
-    "plataforma": "Shopee",
-    "status_da_api": "COMPLETED",
-    "data_Maxima_de_Despacho": "08/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:29.520Z"
-  },
-  {
-    "order_id": "250919VHQM5SPW",
-    "id_tiny": "1038448338",
-    "plataforma": "Shopee",
-    "status_da_api": "COMPLETED",
-    "data_Maxima_de_Despacho": "19/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:30.821Z"
-  },
-  {
-    "order_id": "2509225XCDTN41",
-    "id_tiny": "1038503202",
+    "order_id": "2509239K0XUSW4",
+    "id_tiny": "1038552261",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
     "status_da_api": "SHIPPED",
-    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:33.099Z"
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:07:16.941Z"
   },
   {
-    "order_id": "2000009316454905",
-    "id_tiny": "1038557925",
+    "order_id": "25092385MS5Y94",
+    "id_tiny": "1038536853",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:07:17.673Z"
+  },
+  {
+    "order_id": "2509238045PKN8",
+    "id_tiny": "1038535528",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:07:18.078Z"
+  },
+  {
+    "order_id": "2509239GEACGHU",
+    "id_tiny": "1038550499",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:07:18.426Z"
+  },
+  {
+    "order_id": "2509238703UDV3",
+    "id_tiny": "1038537124",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:07:19.195Z"
+  },
+  {
+    "order_id": "2509239N1GJ14V",
+    "id_tiny": "1038553813",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:07:19.988Z"
+  },
+  {
+    "order_id": "25092388NW7EMH",
+    "id_tiny": "1038537620",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:07:21.018Z"
+  },
+  {
+    "order_id": "2000009320140565",
+    "id_tiny": "1038565121",
     "plataforma": "Mercado Livre",
-    "status": "Aguardando Separação",
+    "status": "em aberto",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-24T23:59:59-03:00",
+    "data_criacao": "2025-09-23T19:07:23.132Z"
+  },
+  {
+    "order_id": "2509239G5YAT33",
+    "id_tiny": "1038550401",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:07:28.471Z"
+  },
+  {
+    "order_id": "250924A90VNTSA",
+    "id_tiny": "1038565123",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "Aguardando Separação",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:07:30.038Z"
+  },
+  {
+    "order_id": "25092387JAGC9A",
+    "id_tiny": "1038537281",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:07:45.847Z"
+  },
+  {
+    "order_id": "250923871ESXAJ",
+    "id_tiny": "1038537139",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:07:46.297Z"
+  },
+  {
+    "order_id": "2509239PBVPS4S",
+    "id_tiny": "1038555315",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:07:47.000Z"
+  },
+  {
+    "order_id": "25092276C6JT8M",
+    "id_tiny": "1038518820",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:07:47.709Z"
+  },
+  {
+    "order_id": "2000013142020092",
+    "id_tiny": "1038557485",
+    "plataforma": "Mercado Livre",
+    "status": "pronto para envio",
     "status_da_api": "No Prazo",
     "data_Maxima_de_Despacho": "2025-09-23T23:59:59-03:00",
-    "data_criacao": "2025-09-23T14:12:33.656Z"
+    "data_criacao": "2025-09-23T19:08:09.634Z"
   },
   {
-    "order_id": "2509226STF0H13",
-    "id_tiny": "1038509411",
+    "order_id": "250924A915919T",
+    "id_tiny": "1038565138",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "SHIPPED",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:35.710Z"
-  },
-  {
-    "order_id": "25092272WS6ATX",
-    "id_tiny": "1038515094",
-    "plataforma": "Shopee",
-    "status_da_api": "SHIPPED",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:38.145Z"
-  },
-  {
-    "order_id": "2509227A2S5V1J",
-    "id_tiny": "1038521066",
-    "plataforma": "Shopee",
-    "status_da_api": "PROCESSED",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:38.692Z"
-  },
-  {
-    "order_id": "2509239M438DS1",
-    "id_tiny": "1038553262",
-    "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:53.480Z"
-  },
-  {
-    "order_id": "2509225XXKMNJR",
-    "id_tiny": "1038503308",
-    "plataforma": "Shopee",
-    "status_da_api": "SHIPPED",
+    "status_da_api": "Aguardando Separação",
     "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:41.432Z"
+    "data_criacao": "2025-09-23T19:07:51.547Z"
   },
   {
-    "order_id": "2509225XEDRS94",
-    "id_tiny": "1038503218",
-    "plataforma": "Shopee",
-    "status_da_api": "SHIPPED",
-    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:44.172Z"
-  },
-  {
-    "order_id": "250922792TU7R0",
-    "id_tiny": "1038520619",
-    "plataforma": "Shopee",
-    "status_da_api": "PROCESSED",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:50.621Z"
-  },
-  {
-    "order_id": "2509237XQBDBPJ",
-    "id_tiny": "1038535179",
+    "order_id": "25092388A8CA3K",
+    "id_tiny": "1038537464",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
     "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:54.621Z"
+    "data_criacao": "2025-09-23T19:08:01.196Z"
   },
   {
-    "order_id": "2509227796FMWR",
-    "id_tiny": "1038519817",
+    "order_id": "2509238622K6B6",
+    "id_tiny": "1038536927",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
     "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:55.463Z"
+    "data_criacao": "2025-09-23T19:08:01.779Z"
   },
   {
-    "order_id": "250919TQVNB70X",
-    "id_tiny": "1038433265",
+    "order_id": "2509239H1N8XU9",
+    "id_tiny": "1038551164",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:08:02.433Z"
+  },
+  {
+    "order_id": "2509239KQY5EGT",
+    "id_tiny": "1038553013",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:08:03.141Z"
+  },
+  {
+    "order_id": "250917PBRWY2PB",
+    "id_tiny": "1038378876",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
     "status_da_api": "COMPLETED",
-    "data_Maxima_de_Despacho": "19/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:56.270Z"
+    "data_Maxima_de_Despacho": "17/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:08:03.934Z"
   },
   {
-    "order_id": "2509226WSMC6U7",
-    "id_tiny": "1038510285",
+    "order_id": "2509239KUFNX6M",
+    "id_tiny": "1038553106",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
     "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:57.098Z"
+    "data_criacao": "2025-09-23T19:08:04.689Z"
   },
   {
-    "order_id": "2509225W3N7H0G",
-    "id_tiny": "1038502891",
-    "plataforma": "Shopee",
-    "status_da_api": "SHIPPED",
-    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:57.956Z"
-  },
-  {
-    "order_id": "2509239MJ1MQ1G",
-    "id_tiny": "1038553479",
-    "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:13:11.654Z"
-  },
-  {
-    "order_id": "2509214Q8HSFY8",
-    "id_tiny": "1038494849",
-    "plataforma": "Shopee",
-    "status_da_api": "SHIPPED",
-    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:58.881Z"
-  },
-  {
-    "order_id": "250922769934P3",
-    "id_tiny": "1038518648",
+    "order_id": "250923838EVM9P",
+    "id_tiny": "1038536318",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
     "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:12:59.690Z"
+    "data_criacao": "2025-09-23T19:08:05.429Z"
   },
   {
-    "order_id": "2509214K5KBN9U",
-    "id_tiny": "1038493548",
+    "order_id": "2509213KRRBX03",
+    "id_tiny": "1038490523",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
     "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:13:00.534Z"
+    "data_criacao": "2025-09-23T19:08:06.146Z"
   },
   {
-    "order_id": "2509214DTK5NTD",
-    "id_tiny": "1038492794",
+    "order_id": "25092385P372W2",
+    "id_tiny": "1038536855",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:08:06.875Z"
+  },
+  {
+    "order_id": "250922771HCR6W",
+    "id_tiny": "1038519689",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:08:07.619Z"
+  },
+  {
+    "order_id": "2509239PASBVJX",
+    "id_tiny": "1038555222",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:08:08.661Z"
+  },
+  {
+    "order_id": "2509214GE59QYW",
+    "id_tiny": "1038493113",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
     "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:13:01.425Z"
+    "data_criacao": "2025-09-23T19:08:09.328Z"
   },
   {
-    "order_id": "2509213M6SHW93",
-    "id_tiny": "1038490978",
+    "order_id": "250923814Q3QFD",
+    "id_tiny": "1038535753",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:08:10.150Z"
+  },
+  {
+    "order_id": "2509239M03G2GC",
+    "id_tiny": "1038553171",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:08:11.044Z"
+  },
+  {
+    "order_id": "2509214EEK3NH3",
+    "id_tiny": "1038492855",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
     "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:13:02.305Z"
+    "data_criacao": "2025-09-23T19:08:11.805Z"
   },
   {
-    "order_id": "250913CD1QV99W",
-    "id_tiny": "1038276509",
+    "order_id": "2509104H0PFC1X",
+    "id_tiny": "1038150723",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
     "status_da_api": "COMPLETED",
-    "data_Maxima_de_Despacho": "15/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:13:03.250Z"
+    "data_Maxima_de_Despacho": "12/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:08:12.590Z"
   },
   {
-    "order_id": "2509239RE0UMGG",
-    "id_tiny": "1038557992",
+    "order_id": "2509093CRB4FCE",
+    "id_tiny": "1038112833",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "COMPLETED",
+    "data_Maxima_de_Despacho": "11/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:08:15.355Z"
+  },
+  {
+    "order_id": "2509214PDKPHB9",
+    "id_tiny": "1038494694",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:13:05.020Z"
+    "data_criacao": "2025-09-23T19:08:16.141Z"
   },
   {
-    "order_id": "2509237VE1ASNS",
-    "id_tiny": "1038534428",
+    "order_id": "2509238NKYJFY9",
+    "id_tiny": "1038541309",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "PROCESSED",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:13:13.566Z"
+    "data_criacao": "2025-09-23T19:08:16.939Z"
+  },
+  {
+    "order_id": "2509238406X7J6",
+    "id_tiny": "1038536483",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:08:20.263Z"
+  },
+  {
+    "order_id": "25092383JVP4RQ",
+    "id_tiny": "1038536383",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:08:20.943Z"
+  },
+  {
+    "order_id": "2509239HPJRVFY",
+    "id_tiny": "1038551502",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:08:22.151Z"
+  },
+  {
+    "order_id": "2509239M2Y26UT",
+    "id_tiny": "1038553257",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:08:23.466Z"
+  },
+  {
+    "order_id": "25092385XRPSY2",
+    "id_tiny": "1038536919",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:08:25.604Z"
+  },
+  {
+    "order_id": "25092387AKJP87",
+    "id_tiny": "1038537225",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:08:27.803Z"
+  },
+  {
+    "order_id": "2509239MF8WAH4",
+    "id_tiny": "1038553406",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:08:29.216Z"
+  },
+  {
+    "order_id": "25092385MPBR77",
+    "id_tiny": "1038536851",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:08:30.665Z"
+  },
+  {
+    "order_id": "25092382HR4T4K",
+    "id_tiny": "1038536154",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:08:32.015Z"
+  },
+  {
+    "order_id": "250924A93V2AWR",
+    "id_tiny": "1038565147",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "Aguardando Separação",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:08:34.381Z"
+  },
+  {
+    "order_id": "25092382YKMY9W",
+    "id_tiny": "1038536250",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:03.863Z"
+  },
+  {
+    "order_id": "25092383TV8JUW",
+    "id_tiny": "1038536441",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:04.811Z"
+  },
+  {
+    "order_id": "25092381C6HT5X",
+    "id_tiny": "1038535807",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:06.027Z"
+  },
+  {
+    "order_id": "2509239KJ1CGVU",
+    "id_tiny": "1038552899",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:06.358Z"
+  },
+  {
+    "order_id": "2509104RFM3Q9D",
+    "id_tiny": "1038155270",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "COMPLETED",
+    "data_Maxima_de_Despacho": "12/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:07.451Z"
+  },
+  {
+    "order_id": "25092385GCYTU2",
+    "id_tiny": "1038536822",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:08.770Z"
+  },
+  {
+    "order_id": "250924A7WHKDA3",
+    "id_tiny": "1038564713",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "Aguardando Separação",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:12.188Z"
+  },
+  {
+    "order_id": "2509214H1NYYVG",
+    "id_tiny": "1038493170",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:13.487Z"
+  },
+  {
+    "order_id": "2509214M7JHG0F",
+    "id_tiny": "1038494057",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:14.771Z"
+  },
+  {
+    "order_id": "2509214P2KRUQ2",
+    "id_tiny": "1038494621",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:17.629Z"
+  },
+  {
+    "order_id": "25092387JP12UN",
+    "id_tiny": "1038537285",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:18.960Z"
+  },
+  {
+    "order_id": "2509214NYFPAA1",
+    "id_tiny": "1038494588",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:20.208Z"
+  },
+  {
+    "order_id": "2509214DXWF12G",
+    "id_tiny": "1038492809",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:21.481Z"
+  },
+  {
+    "order_id": "2509214E71T1SS",
+    "id_tiny": "1038492835",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:22.769Z"
+  },
+  {
+    "order_id": "2509214BGTUJYJ",
+    "id_tiny": "1038492652",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:24.136Z"
+  },
+  {
+    "order_id": "2509213M0YGYH9",
+    "id_tiny": "1038490945",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:25.315Z"
+  },
+  {
+    "order_id": "2509103XCDCET7",
+    "id_tiny": "1038134672",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "COMPLETED",
+    "data_Maxima_de_Despacho": "12/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:26.574Z"
+  },
+  {
+    "order_id": "2509214NR33R3N",
+    "id_tiny": "1038494505",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:28.610Z"
+  },
+  {
+    "order_id": "250924A95EM96J",
+    "id_tiny": "1038565157",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "Aguardando Separação",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:30.985Z"
+  },
+  {
+    "order_id": "2509238C78YJC2",
+    "id_tiny": "1038538664",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:37.852Z"
+  },
+  {
+    "order_id": "250923821Q15V6",
+    "id_tiny": "1038535948",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:38.343Z"
+  },
+  {
+    "order_id": "250924A95KBWB4",
+    "id_tiny": "1038565159",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "Aguardando Separação",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:39.750Z"
+  },
+  {
+    "order_id": "2509239N334VJS",
+    "id_tiny": "1038553950",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:50.270Z"
+  },
+  {
+    "order_id": "2509239PE388JS",
+    "id_tiny": "1038555456",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:51.214Z"
+  },
+  {
+    "order_id": "2509214CQ776QF",
+    "id_tiny": "1038492708",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:52.461Z"
+  },
+  {
+    "order_id": "25092272J48NU0",
+    "id_tiny": "1038514689",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:53.682Z"
+  },
+  {
+    "order_id": "2509239JASBT4E",
+    "id_tiny": "1038551679",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:54.940Z"
+  },
+  {
+    "order_id": "2509239K945QGW",
+    "id_tiny": "1038552571",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:56.174Z"
+  },
+  {
+    "order_id": "2509104C8PR80S",
+    "id_tiny": "1038148196",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "COMPLETED",
+    "data_Maxima_de_Despacho": "12/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:09:57.462Z"
+  },
+  {
+    "order_id": "250924A969984V",
+    "id_tiny": "1038565161",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "Aguardando Separação",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:10:14.797Z"
+  },
+  {
+    "order_id": "2000009311569409",
+    "id_tiny": "1038538392",
+    "plataforma": "Mercado Livre",
+    "status": "enviado",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-23T23:00:00-03:00",
+    "data_criacao": "2025-09-23T19:10:26.505Z"
   },
   {
     "order_id": "2509239MYWYJVX",
     "id_tiny": "1038553714",
-    "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
-    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:13:27.073Z"
-  },
-  {
-    "order_id": "2509226W5KEV92",
-    "id_tiny": "1038510025",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
     "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:13:20.026Z"
+    "data_criacao": "2025-09-23T19:10:26.551Z"
   },
   {
-    "order_id": "25092271SHHGU7",
-    "id_tiny": "1038514138",
+    "order_id": "250923882XNWYH",
+    "id_tiny": "1038537406",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
     "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:13:20.809Z"
+    "data_criacao": "2025-09-23T19:10:27.790Z"
   },
   {
-    "order_id": "2509238CNDYAGH",
-    "id_tiny": "1038538756",
+    "order_id": "2000009297525645",
+    "id_tiny": "1038500442",
+    "plataforma": "Mercado Livre",
+    "status": "entregue",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-22T23:59:59-03:00",
+    "data_criacao": "2025-09-23T19:10:28.046Z"
+  },
+  {
+    "order_id": "2509239NGDD6UM",
+    "id_tiny": "1038554198",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
     "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:13:21.567Z"
+    "data_criacao": "2025-09-23T19:10:28.789Z"
   },
   {
-    "order_id": "2509214HA1XBJQ",
-    "id_tiny": "1038493204",
-    "plataforma": "Shopee",
-    "status_da_api": "SHIPPED",
-    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:13:22.323Z"
+    "order_id": "2000009284695057",
+    "id_tiny": "1038478064",
+    "plataforma": "Mercado Livre",
+    "status": "entregue",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-22T23:59:59-03:00",
+    "data_criacao": "2025-09-23T19:10:29.165Z"
   },
   {
-    "order_id": "2509239REKY04K",
-    "id_tiny": "1038558022",
+    "order_id": "2000013141305010",
+    "id_tiny": "1038553457",
+    "plataforma": "Mercado Livre",
+    "status": "enviado",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-23T23:00:00-03:00",
+    "data_criacao": "2025-09-23T19:10:29.883Z"
+  },
+  {
+    "order_id": "250924A96QK165",
+    "id_tiny": "1038565170",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
     "status_da_api": "UNPAID",
     "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
-    "data_criacao": "2025-09-23T14:13:23.585Z"
+    "data_criacao": "2025-09-23T19:10:30.103Z"
   },
   {
-    "order_id": "2509226WYCDPC1",
-    "id_tiny": "1038510350",
+    "order_id": "2000009306965729",
+    "id_tiny": "1038531848",
+    "plataforma": "Mercado Livre",
+    "status": "enviado",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-23T23:00:00-03:00",
+    "data_criacao": "2025-09-23T19:10:31.466Z"
+  },
+  {
+    "order_id": "2000013091781966",
+    "id_tiny": "1038434976",
+    "plataforma": "Mercado Livre",
+    "status": "entregue",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-19T23:59:59-03:00",
+    "data_criacao": "2025-09-23T19:10:32.449Z"
+  },
+  {
+    "order_id": "2000009284824785",
+    "id_tiny": "1038478326",
+    "plataforma": "Mercado Livre",
+    "status": "entregue",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-22T23:59:59-03:00",
+    "data_criacao": "2025-09-23T19:10:34.041Z"
+  },
+  {
+    "order_id": "2000013132121698",
+    "id_tiny": "1038530868",
+    "plataforma": "Mercado Livre",
+    "status": "enviado",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-23T23:00:00-03:00",
+    "data_criacao": "2025-09-23T19:10:39.773Z"
+  },
+  {
+    "order_id": "2509239QW445RX",
+    "id_tiny": "1038557554",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "PROCESSED",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:13:24.568Z"
+    "data_criacao": "2025-09-23T19:10:44.081Z"
+  },
+  {
+    "order_id": "2509239M438DS1",
+    "id_tiny": "1038553262",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:10:44.777Z"
+  },
+  {
+    "order_id": "2000009320162067",
+    "id_tiny": "1038565206",
+    "plataforma": "Mercado Livre",
+    "status": "em aberto",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-27T23:59:59-03:00",
+    "data_criacao": "2025-09-23T19:10:47.564Z"
+  },
+  {
+    "order_id": "250924A97059CE",
+    "id_tiny": "1038565212",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "Aguardando Separação",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:10:55.734Z"
+  },
+  {
+    "order_id": "2000009303399077",
+    "id_tiny": "1038519746",
+    "plataforma": "Mercado Livre",
+    "status": "entregue",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-22T23:59:59-03:00",
+    "data_criacao": "2025-09-23T19:11:11.795Z"
+  },
+  {
+    "order_id": "2508294S2GNXYT",
+    "id_tiny": "1037723739",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "COMPLETED",
+    "data_Maxima_de_Despacho": "29/08/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:11:12.950Z"
+  },
+  {
+    "order_id": "2509214FARAT6S",
+    "id_tiny": "1038492967",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:11:16.294Z"
+  },
+  {
+    "order_id": "2509214DFS04QK",
+    "id_tiny": "1038492755",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:11:17.264Z"
+  },
+  {
+    "order_id": "250924A975X9DP",
+    "id_tiny": "1038565235",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "CANCELLED",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:11:18.719Z"
+  },
+  {
+    "order_id": "2509239PFQPKU5",
+    "id_tiny": "1038555514",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:11:19.269Z"
+  },
+  {
+    "order_id": "2509214K2K2B5U",
+    "id_tiny": "1038493484",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:11:20.086Z"
+  },
+  {
+    "order_id": "2509239KU658SN",
+    "id_tiny": "1038553068",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:11:20.907Z"
+  },
+  {
+    "order_id": "250923888TJ7S0",
+    "id_tiny": "1038537451",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:11:21.737Z"
+  },
+  {
+    "order_id": "2509239MJ1MQ1G",
+    "id_tiny": "1038553479",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:11:22.746Z"
+  },
+  {
+    "order_id": "2509239NAP8HAJ",
+    "id_tiny": "1038554095",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:11:23.923Z"
   },
   {
     "order_id": "2509239N3N7TB7",
     "id_tiny": "1038554002",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "READY_TO_SHIP",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:13:31.935Z"
+    "data_criacao": "2025-09-23T19:11:25.472Z"
   },
   {
-    "order_id": "2509226WQ90FMG",
-    "id_tiny": "1038510280",
+    "order_id": "2509239H9UHTUR",
+    "id_tiny": "1038551374",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
-    "status_da_api": "PROCESSED",
+    "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:13:34.447Z"
+    "data_criacao": "2025-09-23T19:11:26.289Z"
   },
   {
-    "order_id": "2509225S0PTYFJ",
-    "id_tiny": "1038502013",
+    "order_id": "250924A98HR0G6",
+    "id_tiny": "1038565241",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "Aguardando Separação",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:11:30.479Z"
+  },
+  {
+    "order_id": "2509214E6CU5AN",
+    "id_tiny": "1038492829",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
     "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:13:38.056Z"
+    "data_criacao": "2025-09-23T19:11:42.658Z"
   },
   {
-    "order_id": "25092272U84J2W",
-    "id_tiny": "1038514868",
+    "order_id": "250917PMFB6QPM",
+    "id_tiny": "1038381598",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "COMPLETED",
+    "data_Maxima_de_Despacho": "17/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:11:43.155Z"
+  },
+  {
+    "order_id": "25092383TD02NK",
+    "id_tiny": "1038536438",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
     "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:13:40.156Z"
+    "data_criacao": "2025-09-23T19:11:43.922Z"
   },
   {
-    "order_id": "2509225SRTAXD8",
-    "id_tiny": "1038502161",
-    "plataforma": "Shopee",
-    "status_da_api": "SHIPPED",
-    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:13:41.852Z"
-  },
-  {
-    "order_id": "2509226VC8UEUT",
-    "id_tiny": "1038509843",
+    "order_id": "2509212HU7QU6H",
+    "id_tiny": "1038483160",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
     "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:13:43.532Z"
+    "data_criacao": "2025-09-23T19:11:44.723Z"
   },
   {
-    "order_id": "2509214MWP5EAE",
-    "id_tiny": "1038494321",
-    "plataforma": "Shopee",
-    "status_da_api": "PROCESSED",
-    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:13:47.099Z"
-  },
-  {
-    "order_id": "2509225Y981G2E",
-    "id_tiny": "1038503361",
-    "plataforma": "Shopee",
-    "status_da_api": "SHIPPED",
-    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:14:08.201Z"
-  },
-  {
-    "order_id": "2509226JHG6AR7",
-    "id_tiny": "1038506853",
+    "order_id": "25092384XREDS6",
+    "id_tiny": "1038536700",
+    "prazo_envio": 2,
     "plataforma": "Shopee",
     "status_da_api": "SHIPPED",
     "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
-    "data_criacao": "2025-09-23T14:14:09.555Z"
+    "data_criacao": "2025-09-23T19:11:45.515Z"
+  },
+  {
+    "order_id": "25092383BAE9GE",
+    "id_tiny": "1038536326",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:11:46.286Z"
+  },
+  {
+    "order_id": "25092382RMDUHU",
+    "id_tiny": "1038536198",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:12:01.786Z"
+  },
+  {
+    "order_id": "2509214FA0GN28",
+    "id_tiny": "1038492959",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:12:02.207Z"
+  },
+  {
+    "order_id": "25092380FG3UE8",
+    "id_tiny": "1038535617",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:12:12.006Z"
+  },
+  {
+    "order_id": "2509214F5GFNJQ",
+    "id_tiny": "1038492945",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:12:12.525Z"
+  },
+  {
+    "order_id": "2509227512HF5Y",
+    "id_tiny": "1038516801",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:12:13.310Z"
+  },
+  {
+    "order_id": "2509214ES8H3XA",
+    "id_tiny": "1038492896",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:12:14.114Z"
+  },
+  {
+    "order_id": "250906S7X7FC7R",
+    "id_tiny": "1038001471",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "COMPLETED",
+    "data_Maxima_de_Despacho": "08/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:12:14.865Z"
+  },
+  {
+    "order_id": "25092384APME65",
+    "id_tiny": "1038536559",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:12:16.073Z"
+  },
+  {
+    "order_id": "2000009298905309",
+    "id_tiny": "1038502119",
+    "plataforma": "Mercado Livre",
+    "status": "entregue",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-22T23:59:59-03:00",
+    "data_criacao": "2025-09-23T19:12:17.168Z"
+  },
+  {
+    "order_id": "25092275FYDTC0",
+    "id_tiny": "1038517679",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:12:17.318Z"
+  },
+  {
+    "order_id": "2509213NG57G1R",
+    "id_tiny": "1038491420",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:12:17.928Z"
+  },
+  {
+    "order_id": "2509214CD4TMGD",
+    "id_tiny": "1038492687",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:12:18.743Z"
+  },
+  {
+    "order_id": "250923827THW7D",
+    "id_tiny": "1038535995",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:12:20.433Z"
+  },
+  {
+    "order_id": "2509214E2JTDNB",
+    "id_tiny": "1038492817",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:12:21.789Z"
+  },
+  {
+    "order_id": "250919UJ3SWBGR",
+    "id_tiny": "1038439400",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:12:23.583Z"
+  },
+  {
+    "order_id": "250919VBB9Q6PT",
+    "id_tiny": "1038444892",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:12:25.329Z"
+  },
+  {
+    "order_id": "25092003X261CK",
+    "id_tiny": "1038460801",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:12:27.398Z"
+  },
+  {
+    "order_id": "2509200M5KJE77",
+    "id_tiny": "1038465477",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:12:29.378Z"
+  },
+  {
+    "order_id": "25092015C9JRY6",
+    "id_tiny": "1038472339",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:12:31.490Z"
+  },
+  {
+    "order_id": "2509212J99UFGX",
+    "id_tiny": "1038483274",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:12:33.513Z"
+  },
+  {
+    "order_id": "2509212MF9196B",
+    "id_tiny": "1038483817",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:12:35.057Z"
+  },
+  {
+    "order_id": "25092139D7P7PA",
+    "id_tiny": "1038489334",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:12:37.160Z"
+  },
+  {
+    "order_id": "2509213QNHBR1N",
+    "id_tiny": "1038491602",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:12:38.758Z"
+  },
+  {
+    "order_id": "2509214QAW5MJ9",
+    "id_tiny": "1038494866",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:12:40.640Z"
+  },
+  {
+    "order_id": "2509214QRHX3XN",
+    "id_tiny": "1038494958",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:12:42.391Z"
+  },
+  {
+    "order_id": "25092250BR5Y61",
+    "id_tiny": "1038496622",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:12:44.183Z"
+  },
+  {
+    "order_id": "250922524VB97D",
+    "id_tiny": "1038496995",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:12:46.005Z"
+  },
+  {
+    "order_id": "25092264S4KVP8",
+    "id_tiny": "1038504898",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:12:47.597Z"
+  },
+  {
+    "order_id": "250922650WKNQD",
+    "id_tiny": "1038505165",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:12:51.048Z"
+  },
+  {
+    "order_id": "2509226A1W8YPR",
+    "id_tiny": "1038506280",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:12:52.818Z"
+  },
+  {
+    "order_id": "2509226C2KQ56S",
+    "id_tiny": "1038506364",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:12:55.886Z"
+  },
+  {
+    "order_id": "25092276R4XGDG",
+    "id_tiny": "1038519470",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:12:57.770Z"
+  },
+  {
+    "order_id": "2509227CW4S8QE",
+    "id_tiny": "1038521996",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:12:59.268Z"
+  },
+  {
+    "order_id": "2509237S29STF7",
+    "id_tiny": "1038533138",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "CANCELLED",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:00.979Z"
+  },
+  {
+    "order_id": "2509237SH5RU27",
+    "id_tiny": "1038533260",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:02.460Z"
+  },
+  {
+    "order_id": "2509237T1Q005V",
+    "id_tiny": "1038533584",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:04.230Z"
+  },
+  {
+    "order_id": "2509237TPCV1WS",
+    "id_tiny": "1038533905",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:06.114Z"
+  },
+  {
+    "order_id": "2509237TTGDT13",
+    "id_tiny": "1038533954",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:07.897Z"
+  },
+  {
+    "order_id": "2509237U35Y7NG",
+    "id_tiny": "1038534001",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:09.590Z"
+  },
+  {
+    "order_id": "2509237UJE9D06",
+    "id_tiny": "1038534166",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:12.882Z"
+  },
+  {
+    "order_id": "2509237V3A2A1X",
+    "id_tiny": "1038534338",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:14.647Z"
+  },
+  {
+    "order_id": "2509237W4TW406",
+    "id_tiny": "1038534690",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:16.167Z"
+  },
+  {
+    "order_id": "2509237WF8P2VG",
+    "id_tiny": "1038534760",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:17.830Z"
+  },
+  {
+    "order_id": "2509237X0B622U",
+    "id_tiny": "1038534962",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:19.707Z"
+  },
+  {
+    "order_id": "2509237X20JYK4",
+    "id_tiny": "1038534969",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:21.533Z"
+  },
+  {
+    "order_id": "2509237YEANM11",
+    "id_tiny": "1038535361",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:23.366Z"
+  },
+  {
+    "order_id": "250923803CXRJD",
+    "id_tiny": "1038535517",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:24.721Z"
+  },
+  {
+    "order_id": "2509239GK6SETT",
+    "id_tiny": "1038550714",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:13:25.220Z"
+  },
+  {
+    "order_id": "250923805XXGXX",
+    "id_tiny": "1038535547",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:26.592Z"
+  },
+  {
+    "order_id": "25092380DTP8CB",
+    "id_tiny": "1038535614",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:28.068Z"
+  },
+  {
+    "order_id": "25092380W7SYFK",
+    "id_tiny": "1038535691",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:29.569Z"
+  },
+  {
+    "order_id": "25092381H01B93",
+    "id_tiny": "1038535846",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:31.081Z"
+  },
+  {
+    "order_id": "250923836X6RPJ",
+    "id_tiny": "1038536292",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:32.320Z"
+  },
+  {
+    "order_id": "25092383YKU812",
+    "id_tiny": "1038536482",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:33.959Z"
+  },
+  {
+    "order_id": "250923849VUXYE",
+    "id_tiny": "1038536558",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:35.373Z"
+  },
+  {
+    "order_id": "25092384EX116Q",
+    "id_tiny": "1038536580",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:36.783Z"
+  },
+  {
+    "order_id": "25092384RPSY9F",
+    "id_tiny": "1038536653",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:39.110Z"
+  },
+  {
+    "order_id": "250923850CUNNN",
+    "id_tiny": "1038536706",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:41.507Z"
+  },
+  {
+    "order_id": "250923852Q9HHN",
+    "id_tiny": "1038536735",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:43.883Z"
+  },
+  {
+    "order_id": "25092385AYG3FB",
+    "id_tiny": "1038536773",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:45.481Z"
+  },
+  {
+    "order_id": "25092385F5WCQD",
+    "id_tiny": "1038536788",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:46.803Z"
+  },
+  {
+    "order_id": "25092385S96SCR",
+    "id_tiny": "1038536887",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:48.263Z"
+  },
+  {
+    "order_id": "25092385W73BS7",
+    "id_tiny": "1038536900",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:49.535Z"
+  },
+  {
+    "order_id": "250923865UNAKW",
+    "id_tiny": "1038536953",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:51.096Z"
+  },
+  {
+    "order_id": "25092387GYMNQ8",
+    "id_tiny": "1038537276",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:52.774Z"
+  },
+  {
+    "order_id": "250923886M17WG",
+    "id_tiny": "1038537445",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:54.372Z"
+  },
+  {
+    "order_id": "2000009316249437",
+    "id_tiny": "1038557211",
+    "plataforma": "Mercado Livre",
+    "status": "enviado",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-23T23:00:00-03:00",
+    "data_criacao": "2025-09-23T19:13:54.527Z"
+  },
+  {
+    "order_id": "25092388J272Y3",
+    "id_tiny": "1038537588",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:55.842Z"
+  },
+  {
+    "order_id": "25092388MXPFUQ",
+    "id_tiny": "1038537607",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:57.604Z"
+  },
+  {
+    "order_id": "2000009311947841",
+    "id_tiny": "1038538843",
+    "plataforma": "Mercado Livre",
+    "status": "enviado",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-23T23:00:00-03:00",
+    "data_criacao": "2025-09-23T19:13:58.141Z"
+  },
+  {
+    "order_id": "25092389G7AK89",
+    "id_tiny": "1038537838",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:13:59.218Z"
+  },
+  {
+    "order_id": "2509238A4TB4R4",
+    "id_tiny": "1038538005",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:00.864Z"
+  },
+  {
+    "order_id": "2509238A8BSWMN",
+    "id_tiny": "1038538079",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:02.425Z"
+  },
+  {
+    "order_id": "2509238ATAVSGT",
+    "id_tiny": "1038538197",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:03.677Z"
+  },
+  {
+    "order_id": "2509238BEKC9FU",
+    "id_tiny": "1038538424",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:05.131Z"
+  },
+  {
+    "order_id": "2509238BEXTATA",
+    "id_tiny": "1038538427",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:06.421Z"
+  },
+  {
+    "order_id": "2509238BRY6Y0X",
+    "id_tiny": "1038538491",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:07.793Z"
+  },
+  {
+    "order_id": "2000009231862661",
+    "id_tiny": "1038339698",
+    "plataforma": "Mercado Livre",
+    "status": "entregue",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-18T23:59:59-03:00",
+    "data_criacao": "2025-09-23T19:14:10.056Z"
+  },
+  {
+    "order_id": "2509238BWK33HV",
+    "id_tiny": "1038538593",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:10.118Z"
+  },
+  {
+    "order_id": "2509238BYNS67D",
+    "id_tiny": "1038538618",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:11.623Z"
+  },
+  {
+    "order_id": "2509238C97X1NF",
+    "id_tiny": "1038538681",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:13.288Z"
+  },
+  {
+    "order_id": "2509238CBUUTTM",
+    "id_tiny": "1038538692",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:14.914Z"
+  },
+  {
+    "order_id": "2509238CVAA2T2",
+    "id_tiny": "1038538795",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:16.692Z"
+  },
+  {
+    "order_id": "2509238CXUD5RN",
+    "id_tiny": "1038538824",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:18.165Z"
+  },
+  {
+    "order_id": "2509238DJJPUNA",
+    "id_tiny": "1038538932",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:19.803Z"
+  },
+  {
+    "order_id": "2509238DP1BP8T",
+    "id_tiny": "1038538973",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:21.577Z"
+  },
+  {
+    "order_id": "2509238DUX4DPN",
+    "id_tiny": "1038539001",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:22.915Z"
+  },
+  {
+    "order_id": "2509238E2D2QQ7",
+    "id_tiny": "1038539056",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:24.442Z"
+  },
+  {
+    "order_id": "2000009314362449",
+    "id_tiny": "1038547826",
+    "plataforma": "Mercado Livre",
+    "status": "enviado",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-23T23:00:00-03:00",
+    "data_criacao": "2025-09-23T19:14:25.108Z"
+  },
+  {
+    "order_id": "2509238ENUUJW7",
+    "id_tiny": "1038539171",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:25.812Z"
+  },
+  {
+    "order_id": "2509238F07QGXB",
+    "id_tiny": "1038539235",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:27.501Z"
+  },
+  {
+    "order_id": "2509238F365Q54",
+    "id_tiny": "1038539253",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:28.873Z"
+  },
+  {
+    "order_id": "2509238F4PRWUE",
+    "id_tiny": "1038539266",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:30.191Z"
+  },
+  {
+    "order_id": "2509238GAC772G",
+    "id_tiny": "1038539462",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:31.414Z"
+  },
+  {
+    "order_id": "2509238GSU7NB2",
+    "id_tiny": "1038539596",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:32.885Z"
+  },
+  {
+    "order_id": "2509238HAM3TQ1",
+    "id_tiny": "1038539676",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:34.676Z"
+  },
+  {
+    "order_id": "2509238J63BP60",
+    "id_tiny": "1038539801",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:36.241Z"
+  },
+  {
+    "order_id": "2000013053976412",
+    "id_tiny": "1038339795",
+    "plataforma": "Mercado Livre",
+    "status": "entregue",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-18T23:59:59-03:00",
+    "data_criacao": "2025-09-23T19:14:36.832Z"
+  },
+  {
+    "order_id": "2509238J7BEEUJ",
+    "id_tiny": "1038539812",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:37.787Z"
+  },
+  {
+    "order_id": "2000009193528801",
+    "id_tiny": "1038257581",
+    "plataforma": "Mercado Livre",
+    "status": "não entregue",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-12T23:59:59-03:00",
+    "data_criacao": "2025-09-23T19:14:38.046Z"
+  },
+  {
+    "order_id": "2509238JKT3KQG",
+    "id_tiny": "1038539830",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:39.158Z"
+  },
+  {
+    "order_id": "2509238K2BERHN",
+    "id_tiny": "1038539893",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:14:40.689Z"
+  },
+  {
+    "order_id": "2509214QVY24K3",
+    "id_tiny": "1038494984",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:14:41.684Z"
+  },
+  {
+    "order_id": "2509239GVH9WHF",
+    "id_tiny": "1038551012",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:14:42.611Z"
+  },
+  {
+    "order_id": "2509239K9MCH3E",
+    "id_tiny": "1038552597",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:14:44.622Z"
+  },
+  {
+    "order_id": "2509237MXV39MN",
+    "id_tiny": "1038530716",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:14:45.546Z"
+  },
+  {
+    "order_id": "2509214Q2PW4A1",
+    "id_tiny": "1038494799",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:14:46.489Z"
+  },
+  {
+    "order_id": "250923982GP86M",
+    "id_tiny": "1038547773",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:14:47.341Z"
+  },
+  {
+    "order_id": "25092381H5SQ91",
+    "id_tiny": "1038535847",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:14:48.317Z"
+  },
+  {
+    "order_id": "2509104R070V3Y",
+    "id_tiny": "1038154945",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "COMPLETED",
+    "data_Maxima_de_Despacho": "12/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:14:49.857Z"
+  },
+  {
+    "order_id": "2509239MG6FQJA",
+    "id_tiny": "1038553443",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:14:50.700Z"
+  },
+  {
+    "order_id": "25092385XPRR59",
+    "id_tiny": "1038536917",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:14:52.105Z"
+  },
+  {
+    "order_id": "2509239D5N2S3B",
+    "id_tiny": "1038549002",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:14:53.275Z"
+  },
+  {
+    "order_id": "25092384NC1MD2",
+    "id_tiny": "1038536630",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:14:54.205Z"
+  },
+  {
+    "order_id": "2509214QJ4VH49",
+    "id_tiny": "1038494900",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:14:55.808Z"
+  },
+  {
+    "order_id": "25092271VA7FVW",
+    "id_tiny": "1038514344",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:14:56.783Z"
+  },
+  {
+    "order_id": "250924A9B3RVU6",
+    "id_tiny": "1038565296",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "Aguardando Separação",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:14:58.644Z"
+  },
+  {
+    "order_id": "2000009273446411",
+    "id_tiny": "1038446380",
+    "plataforma": "Mercado Livre",
+    "status": "entregue",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-20T23:59:59-03:00",
+    "data_criacao": "2025-09-23T19:15:07.208Z"
+  },
+  {
+    "order_id": "2509239DM5GR8G",
+    "id_tiny": "1038549122",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:15:09.190Z"
+  },
+  {
+    "order_id": "25092382SMUUS0",
+    "id_tiny": "1038536215",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:15:09.944Z"
+  },
+  {
+    "order_id": "2509239NJRQTCT",
+    "id_tiny": "1038554412",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:15:10.617Z"
+  },
+  {
+    "order_id": "2509237U7K3Q9B",
+    "id_tiny": "1038534043",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:15:11.134Z"
+  },
+  {
+    "order_id": "250918RBRG5C32",
+    "id_tiny": "1038406838",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "COMPLETED",
+    "data_Maxima_de_Despacho": "18/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:15:11.545Z"
+  },
+  {
+    "order_id": "250917QTB1QMWA",
+    "id_tiny": "1038398981",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "COMPLETED",
+    "data_Maxima_de_Despacho": "18/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:15:12.407Z"
+  },
+  {
+    "order_id": "250924A9BEA7EE",
+    "id_tiny": "1038565300",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "Aguardando Separação",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:15:14.476Z"
+  },
+  {
+    "order_id": "2509239GBCW23Y",
+    "id_tiny": "1038550489",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:15:22.061Z"
+  },
+  {
+    "order_id": "25092381W28W2T",
+    "id_tiny": "1038535909",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:15:22.561Z"
+  },
+  {
+    "order_id": "2509239K70G8Q0",
+    "id_tiny": "1038552544",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:15:23.312Z"
+  },
+  {
+    "order_id": "2509239QUJJ47N",
+    "id_tiny": "1038557488",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:15:24.141Z"
+  },
+  {
+    "order_id": "2509239PGR368U",
+    "id_tiny": "1038555610",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:15:24.844Z"
+  },
+  {
+    "order_id": "25092382GK04KB",
+    "id_tiny": "1038536148",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:15:25.753Z"
+  },
+  {
+    "order_id": "250924A9BVKRSD",
+    "id_tiny": "1038565302",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:15:26.798Z"
+  },
+  {
+    "order_id": "2509239H93QF7S",
+    "id_tiny": "1038551367",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:15:48.700Z"
+  },
+  {
+    "order_id": "2509227597WRYW",
+    "id_tiny": "1038517501",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:15:49.152Z"
+  },
+  {
+    "order_id": "2509239H1FKG2R",
+    "id_tiny": "1038551148",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:15:49.793Z"
+  },
+  {
+    "order_id": "25092272TGA24D",
+    "id_tiny": "1038514802",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:15:50.457Z"
+  },
+  {
+    "order_id": "250924A9C81XTP",
+    "id_tiny": "1038565304",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "Aguardando Separação",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:15:52.226Z"
+  },
+  {
+    "order_id": "2509239QXY87HU",
+    "id_tiny": "1038557564",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:17:18.765Z"
+  },
+  {
+    "order_id": "25092386RDT701",
+    "id_tiny": "1038537076",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:17:19.694Z"
+  },
+  {
+    "order_id": "250924A9CJGTVJ",
+    "id_tiny": "1038565306",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "Aguardando Separação",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:17:21.858Z"
+  },
+  {
+    "order_id": "25092274P7D3QM",
+    "id_tiny": "1038516314",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:17:29.060Z"
+  },
+  {
+    "order_id": "250923847V1E5A",
+    "id_tiny": "1038536547",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:17:30.019Z"
+  },
+  {
+    "order_id": "25092275Q910HW",
+    "id_tiny": "1038517946",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:17:31.287Z"
+  },
+  {
+    "order_id": "250923873T3RB6",
+    "id_tiny": "1038537162",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:17:32.409Z"
+  },
+  {
+    "order_id": "250924A9CV2ANF",
+    "id_tiny": "1038565309",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "Aguardando Separação",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:17:33.750Z"
+  },
+  {
+    "order_id": "25092275JR4KR0",
+    "id_tiny": "1038517776",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:17:49.927Z"
+  },
+  {
+    "order_id": "2509239PU13UUM",
+    "id_tiny": "1038556674",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:17:50.502Z"
+  },
+  {
+    "order_id": "250923882JAUUQ",
+    "id_tiny": "1038537404",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:17:51.671Z"
+  },
+  {
+    "order_id": "2509239PFUHBCY",
+    "id_tiny": "1038555576",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:17:52.594Z"
+  },
+  {
+    "order_id": "250917QRHJ0XVN",
+    "id_tiny": "1038398148",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "COMPLETED",
+    "data_Maxima_de_Despacho": "18/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:18:07.932Z"
+  },
+  {
+    "order_id": "25092380X5A0XK",
+    "id_tiny": "1038535703",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:18:08.894Z"
+  },
+  {
+    "order_id": "250922754G82G9",
+    "id_tiny": "1038517027",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:18:10.181Z"
+  },
+  {
+    "order_id": "250924A9DH2B2V",
+    "id_tiny": "1038565315",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "Aguardando Separação",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:18:12.438Z"
+  },
+  {
+    "order_id": "2000009303614793",
+    "id_tiny": "1038520285",
+    "plataforma": "Mercado Livre",
+    "status": "enviado",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-23T23:00:00-03:00",
+    "data_criacao": "2025-09-23T19:18:28.903Z"
+  },
+  {
+    "order_id": "2509239Q5QG70D",
+    "id_tiny": "1038557106",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:18:32.169Z"
+  },
+  {
+    "order_id": "25092385DT1AYV",
+    "id_tiny": "1038536774",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:18:34.054Z"
+  },
+  {
+    "order_id": "2509239Q8TNKF7",
+    "id_tiny": "1038557141",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:18:34.976Z"
+  },
+  {
+    "order_id": "25092381KG79T8",
+    "id_tiny": "1038535864",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:18:35.871Z"
+  },
+  {
+    "order_id": "2509237KP87XWG",
+    "id_tiny": "1038530361",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:18:36.819Z"
+  },
+  {
+    "order_id": "2509239JC2DQ1M",
+    "id_tiny": "1038551696",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:18:51.708Z"
+  },
+  {
+    "order_id": "2509239GUHRASE",
+    "id_tiny": "1038550971",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:18:52.311Z"
+  },
+  {
+    "order_id": "2509239G2MJ4S3",
+    "id_tiny": "1038550348",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:18:53.592Z"
+  },
+  {
+    "order_id": "2509237XDYXGS8",
+    "id_tiny": "1038535092",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:18:54.295Z"
+  },
+  {
+    "order_id": "2509239HS2W48B",
+    "id_tiny": "1038551522",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:18:55.120Z"
+  },
+  {
+    "order_id": "25092383FEXBQY",
+    "id_tiny": "1038536353",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:18:56.001Z"
+  },
+  {
+    "order_id": "2509213JWJM1AS",
+    "id_tiny": "1038490467",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:18:56.838Z"
+  },
+  {
+    "order_id": "2509212JCA5YAX",
+    "id_tiny": "1038483291",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:18:57.581Z"
+  },
+  {
+    "order_id": "2509239R0JTKNT",
+    "id_tiny": "1038557591",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:18:58.423Z"
+  },
+  {
+    "order_id": "2509239NRMN9Y6",
+    "id_tiny": "1038554487",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:18:59.254Z"
+  },
+  {
+    "order_id": "2509239R34RU7U",
+    "id_tiny": "1038557636",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:00.392Z"
+  },
+  {
+    "order_id": "2509239M5BB9F0",
+    "id_tiny": "1038553266",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:01.289Z"
+  },
+  {
+    "order_id": "2509239KKXCQCP",
+    "id_tiny": "1038552958",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:02.181Z"
+  },
+  {
+    "order_id": "2509239FNPKRFW",
+    "id_tiny": "1038550087",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:03.021Z"
+  },
+  {
+    "order_id": "2509238531S77U",
+    "id_tiny": "1038536738",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:03.833Z"
+  },
+  {
+    "order_id": "2509239FJFM3P1",
+    "id_tiny": "1038550040",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:04.696Z"
+  },
+  {
+    "order_id": "2509239K4413TK",
+    "id_tiny": "1038552276",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:05.516Z"
+  },
+  {
+    "order_id": "25092389DS3UMG",
+    "id_tiny": "1038537816",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:06.720Z"
+  },
+  {
+    "order_id": "250906QJWNN2ER",
+    "id_tiny": "1037984608",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "COMPLETED",
+    "data_Maxima_de_Despacho": "08/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:07.536Z"
+  },
+  {
+    "order_id": "250923802XNBD2",
+    "id_tiny": "1038535511",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:08.575Z"
+  },
+  {
+    "order_id": "2509239QCRM6GY",
+    "id_tiny": "1038557160",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:09.539Z"
+  },
+  {
+    "order_id": "2509238BC0D0TY",
+    "id_tiny": "1038538402",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:10.515Z"
+  },
+  {
+    "order_id": "25092386FYW2KQ",
+    "id_tiny": "1038537019",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:11.369Z"
+  },
+  {
+    "order_id": "2509239QGYY966",
+    "id_tiny": "1038557347",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:12.167Z"
+  },
+  {
+    "order_id": "2509239MFBSV9J",
+    "id_tiny": "1038553404",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:12.941Z"
+  },
+  {
+    "order_id": "25092388TE7N4U",
+    "id_tiny": "1038537637",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:16.229Z"
+  },
+  {
+    "order_id": "250907UB2UJQ2P",
+    "id_tiny": "1038016334",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "COMPLETED",
+    "data_Maxima_de_Despacho": "09/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:16.992Z"
+  },
+  {
+    "order_id": "250922752YJNKK",
+    "id_tiny": "1038516944",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:17.731Z"
+  },
+  {
+    "order_id": "2509214QT5EVX7",
+    "id_tiny": "1038494974",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:18.573Z"
+  },
+  {
+    "order_id": "2509239FWWVAB0",
+    "id_tiny": "1038550176",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:19.247Z"
+  },
+  {
+    "order_id": "2509214QJTUQW3",
+    "id_tiny": "1038494923",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:20.043Z"
+  },
+  {
+    "order_id": "2509239NM3MHEX",
+    "id_tiny": "1038554421",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:20.772Z"
+  },
+  {
+    "order_id": "25092274V49S4A",
+    "id_tiny": "1038516504",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:21.476Z"
+  },
+  {
+    "order_id": "250924A9GR2RTK",
+    "id_tiny": "1038565344",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "UNPAID",
+    "data_Maxima_de_Despacho": "31/12/1969, 21:00:00",
+    "data_criacao": "2025-09-23T19:19:22.519Z"
+  },
+  {
+    "order_id": "2000009269969989",
+    "id_tiny": "1038437917",
+    "plataforma": "Mercado Livre",
+    "status": "entregue",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-19T23:59:59-03:00",
+    "data_criacao": "2025-09-23T19:19:37.772Z"
+  },
+  {
+    "order_id": "2509239PNJNR9Q",
+    "id_tiny": "1038556059",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:53.469Z"
+  },
+  {
+    "order_id": "2509239PVC14PD",
+    "id_tiny": "1038556767",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:54.866Z"
+  },
+  {
+    "order_id": "2509239Q3G0ASG",
+    "id_tiny": "1038557073",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:55.288Z"
+  },
+  {
+    "order_id": "2509239QYVT9YQ",
+    "id_tiny": "1038557571",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:55.611Z"
+  },
+  {
+    "order_id": "25092388NB52M1",
+    "id_tiny": "1038537611",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "SHIPPED",
+    "data_Maxima_de_Despacho": "23/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:56.375Z"
+  },
+  {
+    "order_id": "250924A9H4DRX9",
+    "id_tiny": "1038565349",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "Aguardando Separação",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:19:58.196Z"
+  },
+  {
+    "order_id": "250924A9HJQ6R2",
+    "id_tiny": "1038565469",
+    "prazo_envio": 2,
+    "plataforma": "Shopee",
+    "status_da_api": "Aguardando Separação",
+    "data_Maxima_de_Despacho": "24/09/2025, 23:59:59",
+    "data_criacao": "2025-09-23T19:21:28.386Z"
+  },
+  {
+    "order_id": "2000013123515050",
+    "id_tiny": "1038501344",
+    "plataforma": "Mercado Livre",
+    "status": "entregue",
+    "status_da_api": "No Prazo",
+    "data_Maxima_de_Despacho": "2025-09-22T23:59:59-03:00",
+    "data_criacao": "2025-09-23T19:21:46.350Z"
   }
 ]

@@ -1,6 +1,6 @@
 const { connectRabbitMQ } = require("./rabbitmq");
 const { QUEUE_NAME, RETRY_QUEUE } = require("./rabbitmq");
-const { processarPayload } = require("./controllers/DatasDespachos");
+const { DataDespachoML } = require("./controllers/DatasDespachos");
 const fs = require("fs");
 const path = require("path");
 
@@ -41,7 +41,7 @@ async function consumerStart(res) {
         }
 
         try {
-          await processarPayload({ body }, res);
+          await DataDespachoML({ body }, res);
           channel.ack(msg);
         } catch (err) {
           console.error(`Erro ao processar mensagem: ${err.message}`);

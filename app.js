@@ -30,7 +30,7 @@ app.post("/", async (req, res) => {
 
     const payload = req.body;
     console.log("Recebido payload:");
-    if (!payload || Object.keys(payload).length === 0) {
+    if (!payload || payload === "") {
       return res.status(400).send("Payload vazio ou inválido.");
     }
     payload.tentativas = 0;

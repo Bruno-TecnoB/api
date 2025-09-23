@@ -24,9 +24,7 @@ app.use(bodyParser.json());
   }
 })();
 
-// Endpoint que recebe webhook
-app.get("/", (req, res) => res.status(200).send("OK"));
-app.head("/", (req, res) => res.status(200).end());
+// Endpoint que recebe webhooks
 app.post("/", async (req, res) => {
   try {
     if (!channel)

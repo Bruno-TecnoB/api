@@ -24,7 +24,7 @@ app.use(bodyParser.json());
     console.error("Erro ao inicializar RabbitMQ:", err);
   }
 })();
-
+//
 // Endpoint que recebe webhook
 app.post("/tiny1", async (req, res) => {
   try {

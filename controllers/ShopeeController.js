@@ -1,7 +1,5 @@
 const crypto = require("crypto");
-require("dotenv").config({
-  quiet: true,
-});
+require("dotenv").config({ quiet: true });
 const shopeeModel = require("../models/ShopeeModel");
 const axios = require("axios");
 
@@ -188,4 +186,45 @@ async function RenovarAccessToken(
   return data;
 }
 
-module.exports = { ShopeeAuthUrl, concluirIntegracaoShopee };
+async function DataDespacho(req, res) {
+  try {
+    const { partner_id, partner_key, shop_id, access_token, order_sn } =
+      req.body;
+    const path = "/get_order_detail";
+    const host = "https://partner.shopeemobile.com/api/v2";
+    const timestamp = Math.floor(Date.now() / 1000);
+
+    const baseString = `${partner_id}${path}${timestamp}${access_token}${shop_id}`;
+    const sign = crypto
+      .createHmac("sha256", partner_key)
+      .update(baseString)
+      .digest("hex");
+
+    const url = `${host}${path}?partner_id=${partner_id}&timestamp=${timestamp}&sign=${sign}&shop_id=${shop_id}&access_token=${access_token}`;
+
+    const body = {
+      order_sn_list: [order_sn],
+      response_optional_fields: "buyer_user_id,recipient_address",
+    };
+
+    const response = await axios.post(url, body, {
+      headers: { "Content-Type": "application/json" },
+    });
+
+    console.log(JSON.stringify(response.data));
+
+    return res.status(200).send(response.data);
+  } catch (error) {
+    return res.status(500).send({
+      error: error.message,
+      details: error.response?.data || null,
+    });
+  }
+}
+
+module.exports = {
+  ShopeeAuthUrl,
+  concluirIntegracaoShopee,
+  DataDespacho,
+  RenovarAccessToken,
+};

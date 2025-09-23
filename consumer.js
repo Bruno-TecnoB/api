@@ -1,6 +1,6 @@
 const { connectRabbitMQ } = require("./rabbitmq");
 const { QUEUE_NAME, RETRY_QUEUE } = require("./rabbitmq");
-const { processarPayload } = require("./controllers/MercadoLivreController");
+const { processarPayload } = require("./controllers/DatasDespachos");
 const fs = require("fs");
 const path = require("path");
 
@@ -19,6 +19,7 @@ function saveErrorPayload(payload) {
 async function consumerStart(res) {
   try {
     const channel = await connectRabbitMQ();
+    console.log("Aguardando mensagens na fila:", QUEUE_NAME);
 
     channel.consume(
       QUEUE_NAME,

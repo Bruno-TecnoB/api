@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 require("dotenv").config({ quiet: true });
 const { connectRabbitMQ, QUEUE_NAME } = require("./rabbitmq");
+const dataDespacho = require("./routes/ShopeeRouter");
 const sequelize = require("./db/conn");
 
 const app = express();
@@ -16,25 +17,24 @@ app.use(bodyParser.json());
 
     // Inicializa servidor só depois de conectar RabbitMQ
     await sequelize.sync();
-    app.listen(process.env.PORT || 5000, () => {});
+    app.listen(process.env.PORT || 5000, () => {
+      console.log("Servidor rodando na porta 5000");
+    });
   } catch (err) {
     console.error("Erro ao inicializar RabbitMQ:", err);
   }
 })();
 
-// Endpoint que recebe webhooks
-app.post("/", async (req, res) => {
+// Endpoint que recebe webhook
+app.post("/tiny1", async (req, res) => {
   try {
     if (!channel)
       return res.status(500).send("Canal RabbitMQ não inicializado.");
 
     const payload = req.body;
-
     if (!payload || Object.keys(payload).length === 0) {
-      console.log("Webhook de Teste recebido");
-      return res.sendStatus(200);
+      return res.status(200).send("Payload vazio ou inválido");
     }
-
     payload.tentativas = 0;
     channel.sendToQueue(QUEUE_NAME, Buffer.from(JSON.stringify(payload)), {
       persistent: true,
@@ -45,5 +45,7 @@ app.post("/", async (req, res) => {
     res.status(500).send("Erro interno");
   }
 });
+
+app.use("/", dataDespacho);
 
 const consumerStart = require("./consumer");

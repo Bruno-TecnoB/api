@@ -14,7 +14,7 @@ http
           if (payload.ref === "refs/heads/producao") {
             console.log("🚀 Deploy iniciado...");
             exec(
-              "sh ./deploy.sh",
+              "sh ./new/deploy.sh",
               { cwd: "/var/www/tecnobil.dev/new" },
               (err, stdout, stderr) => {
                 if (err) console.error("Erro:", err);

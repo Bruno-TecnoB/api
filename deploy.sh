@@ -8,4 +8,3 @@ echo "📦 Instalando dependências..."
 npm install --production
 
 echo "♻️ Reiniciando aplicação..."
-pm2 restart api

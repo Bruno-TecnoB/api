@@ -1,5 +1,6 @@
 #geral
 node_modules/
+new/
 
 #nest-api
 nest-api/*

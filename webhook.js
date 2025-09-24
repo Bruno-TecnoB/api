@@ -15,7 +15,7 @@ http
             console.log("🚀 Deploy iniciado...");
             exec(
               "sh ./deploy.sh",
-              { cwd: "/var/www/tecnobil.dev-new" },
+              { cwd: "/var/www/tecnobil.dev/new" },
               (err, stdout, stderr) => {
                 if (err) console.error("Erro:", err);
                 console.log(stdout);

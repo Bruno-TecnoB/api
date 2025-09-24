@@ -1,4 +1,4 @@
-cd /var/www/tecnobil.dev-new || exit
+cd /var/www/tecnobil.dev/new || exit
 
 echo "🔄 Atualizando código da branch produção..."
 git fetch origin producao

@@ -10,7 +10,7 @@ http
         try {
           const payload = JSON.parse(body);
 
-          // Só executa se o push for na branch producao
+          //Só executa se o push for na branch producao
           if (payload.ref === "refs/heads/producao") {
             console.log("🚀 Deploy iniciado...");
             exec(

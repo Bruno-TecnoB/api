@@ -45,5 +45,3 @@ async function getOrderDetail() {
 }
 
 getOrderDetail();
-//
-//
